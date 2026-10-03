@@ -6,11 +6,15 @@
 
 **Mac'inin ne yaptığını gör. Alanı neyin kullandığını bul. Kontrol ederek temizle.**
 
+**12 arayüz dili · Yerel macOS uygulaması · Ücretsiz ve sınırsız kullanım**
+
 Luma; sistem izleme, depolama inceleme ve Mac bakımı için SwiftUI ile geliştirilmiş yerel bir macOS uygulamasıdır. Hesap, abonelik, reklam ve telemetri içermez.
 
 **Kişisel ve ticari kullanım ücretsizdir. Cihaz, kullanıcı, özellik veya süre sınırı yoktur.** Kaynak kod incelenebilir ve değiştirilmeden derlenebilir. Kendi kopyanız dahil kodu veya belgeleri değiştirmek ve türev sürüm üretmek için yazılı izin gerekir. [Lisans](LICENSE).
 
-[English](README.md) · [Sürümler](https://github.com/sekizlipenguen/luma-mac/releases) · [Hata bildir](https://github.com/sekizlipenguen/luma-mac/issues)
+[English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
+
+[Sürümler](https://github.com/sekizlipenguen/luma-mac/releases) · [Hata bildir](https://github.com/sekizlipenguen/luma-mac/issues)
 
 ## Ekran görüntüleri
 
@@ -48,7 +52,11 @@ Türkçe arayüzle çalışan gerçek Luma ekranlarıdır. Değerler bilgisayara
 - **Güvenlik:** FileVault, güvenlik duvarı, Gatekeeper, SIP ve izin durumlarını ilgili Ayarlar bağlantılarıyla gösterir. Antivirüs değildir.
 - **Mac bakım, zamanlama ve geçmiş:** desteklenen bakım işlemleri ve yerel kayıtları sunar. Zamanlama uygulamayı açar; arka planda sessizce dosya silmez.
 
-Arayüz İngilizce, Türkçe, Almanca, Fransızca, İspanyolca, İtalyanca, Brezilya Portekizcesi, Japonca, Korece, Basitleştirilmiş Çince, Rusça ve Arapça destekler.
+## Desteklenen diller
+
+**12 arayüz dili:** İngilizce, Türkçe, Almanca, Fransızca, İspanyolca, İtalyanca, Brezilya Portekizcesi, Japonca, Korece, Basitleştirilmiş Çince, Rusça ve Arapça.
+
+Dili **Ayarlar → Dil** bölümünden seçebilir veya sistem dilini takip edebilirsiniz. Sistem Varsayılanı bir seçim biçimidir; 13. dil değildir. Bazı teknik veya henüz çevrilmemiş metinler İngilizce görünebilir. Desteklenen her dilin README bağlantısı sayfanın başındadır.
 
 ## Güvenlik ve gizlilik
 

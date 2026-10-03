@@ -6,11 +6,15 @@
 
 **See what your Mac is doing. Find what takes up space. Clean up with control.**
 
+**12 interface languages · Native macOS · Free unlimited use**
+
 Luma is a native SwiftUI utility for system monitoring, storage inspection, and Mac maintenance. It runs locally, with no account, subscription, ads, or telemetry.
 
 **Free for personal and commercial use, with no device, user, feature, or time limits.** Source code is available to inspect and build; modifying it or creating derivative versions requires written permission. See [LICENSE](LICENSE).
 
-[Türkçe](README.tr.md) · [Releases](https://github.com/sekizlipenguen/luma-mac/releases) · [Report a bug](https://github.com/sekizlipenguen/luma-mac/issues) · [License](LICENSE)
+[English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
+
+[Releases](https://github.com/sekizlipenguen/luma-mac/releases) · [Report a bug](https://github.com/sekizlipenguen/luma-mac/issues) · [License](LICENSE)
 
 ## A look inside
 
@@ -62,7 +66,11 @@ Real screenshots of Luma on macOS, with the interface set to Turkish. Metrics va
 - **Security:** review FileVault, firewall, Gatekeeper, SIP, and permission status, with macOS settings links. This is a status overview, not antivirus software.
 - **Mac care, scheduling, and history:** supported maintenance actions and local operation records. A schedule opens Luma; it does not silently delete files.
 
-The interface supports English, Turkish, German, French, Spanish, Italian, Brazilian Portuguese, Japanese, Korean, Simplified Chinese, Russian, and Arabic.
+## Languages
+
+**12 interface languages:** English, Turkish, German, French, Spanish, Italian, Brazilian Portuguese, Japanese, Korean, Simplified Chinese, Russian, and Arabic.
+
+Choose a language in **Settings → Language**, or follow the system language. System Default is a selection mode, not a thirteenth language. Some technical or untranslated labels may appear in English. Each supported language has a README linked at the top of this page.
 
 ## Safety and privacy
 
