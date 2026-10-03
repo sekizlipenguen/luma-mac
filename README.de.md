@@ -6,6 +6,8 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
+**[DMG herunterladen — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
 **Deinen Mac verstehen. Speicherfresser finden. Aufräumen mit Kontrolle.**
 
 Luma ist eine native SwiftUI-App für Systemüberwachung, Speicheranalyse und Mac-Wartung. Sie arbeitet lokal, ohne Konto, Abonnement, Werbung oder Telemetrie.
@@ -38,7 +40,11 @@ Kerndaten bleiben lokal. Fehlende Messwerte werden kenntlich gemacht: Temperatur
 
 ## Installation und Voraussetzungen
 
-**macOS 15 oder neuer.** Offizielle App-Pakete erscheinen, sobald veröffentlicht, unter [Releases](https://github.com/sekizlipenguen/luma-mac/releases). Prüfe dort Architektur, Signatur und Apple-Notarisierung. Ein Quellcode-ZIP ist keine installierbare App. Entpacke ein App-ZIP und verschiebe `Luma.app` nach Programme.
+**macOS 15 oder neuer · Apple Silicon und Intel.** Öffne das DMG und ziehe `Luma.app` nach Programme. Alternativ entpacke das App-ZIP. Die Quellcode-Archive enthalten keine fertige App.
+
+**[DMG herunterladen — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
+**Vorschau 0.1.0:** ad-hoc signiert, ohne Developer ID und Apple-Notarisierung. macOS kann den ersten Start blockieren. Wenn du der Quelle vertraust, nutze die App-spezifische Freigabe nach Apples Anleitung. Verwaltete Macs können dies verhindern. [Apple](https://support.apple.com/en-us/102445).
 
 Für geschützte Library-Ordner: Systemeinstellungen → Datenschutz & Sicherheit → Festplattenvollzugriff. Ohne diese Berechtigung überspringt Luma unzugängliche Orte. Die Finder-Erweiterung kann in den macOS-Erweiterungseinstellungen aktiviert werden. iOS benötigt Xcode-Kommandozeilenwerkzeuge; Android benötigt SDK-Werkzeuge einschließlich `adb`.
 
@@ -58,7 +64,7 @@ Ausgabe: `build/Build/Products/Release/Luma.app`.
 
 ## Screenshots
 
-Echte App-Aufnahmen mit türkischer Oberfläche; Messwerte ändern sich mit dem Mac und seiner Auslastung.
+Echte App-Aufnahmen mit englischer Oberfläche; Messwerte ändern sich mit dem Mac und seiner Auslastung.
 
 ![Systemübersicht](Docs/Images/dashboard.png)
 

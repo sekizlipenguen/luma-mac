@@ -6,6 +6,8 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
+**[DMG 다운로드 — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
 **Mac의 상태를 파악하고, 공간을 차지하는 항목을 찾고, 확인하면서 정리하세요.**
 
 Luma는 시스템 모니터링, 저장 공간 분석, Mac 유지 관리를 위한 네이티브 SwiftUI 앱입니다. 계정, 구독, 광고, 원격 측정 없이 로컬에서 작동합니다.
@@ -38,7 +40,11 @@ English · Türkçe · Deutsch · Français · Español · Italiano · Portuguê
 
 ## 설치 및 요구 사항
 
-**macOS 15 이상.** 공식 앱 패키지는 게시 후 [Releases](https://github.com/sekizlipenguen/luma-mac/releases)에서 제공됩니다. 각 버전의 아키텍처, 서명, Apple 공증 상태를 확인하세요. 소스 코드 ZIP은 설치용 앱이 아닙니다. 앱 ZIP을 풀고 `Luma.app`을 응용 프로그램으로 옮기세요.
+**macOS 15 이상 · Apple Silicon 및 Intel.** DMG를 열고 `Luma.app`을 응용 프로그램으로 드래그하세요. 앱 ZIP을 풀어서 설치할 수도 있습니다. 소스 코드 압축 파일에는 빌드된 앱이 없습니다.
+
+**[DMG 다운로드 — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
+**미리 보기 0.1.0:** 임시 서명만 있으며 Developer ID 서명과 Apple 공증은 없습니다. macOS가 첫 실행을 차단할 수 있습니다. 출처를 신뢰한다면 Apple의 안내에 따라 이 앱을 허용하세요. 관리되는 Mac에서는 허용되지 않을 수 있습니다. [Apple](https://support.apple.com/en-us/102445).
 
 보호된 Library 폴더에는 시스템 설정 → 개인정보 보호 및 보안 → 전체 디스크 접근 권한이 필요합니다. 권한이 없으면 접근 불가능한 위치를 건너뜁니다. Finder 확장은 macOS 확장 설정에서 활성화할 수 있습니다. iOS에는 Xcode 명령줄 도구, Android에는 `adb`를 포함한 SDK 도구가 필요합니다.
 
@@ -58,7 +64,7 @@ xcodebuild -project Luma.xcodeproj -scheme Luma -configuration Release -derivedD
 
 ## 스크린샷
 
-터키어 인터페이스의 실제 앱 화면입니다. 수치는 Mac과 작업 부하에 따라 달라집니다.
+영어 인터페이스의 실제 앱 화면입니다. 수치는 Mac과 작업 부하에 따라 달라집니다.
 
 ![요약](Docs/Images/dashboard.png)
 

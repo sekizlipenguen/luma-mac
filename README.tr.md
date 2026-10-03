@@ -16,9 +16,11 @@ Luma; sistem izleme, depolama inceleme ve Mac bakımı için SwiftUI ile gelişt
 
 [Sürümler](https://github.com/sekizlipenguen/luma-mac/releases) · [Hata bildir](https://github.com/sekizlipenguen/luma-mac/issues)
 
+**[DMG indir — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip)
+
 ## Ekran görüntüleri
 
-Türkçe arayüzle çalışan gerçek Luma ekranlarıdır. Değerler bilgisayara ve o anki iş yüküne göre değişir.
+İngilizce arayüzle çalışan gerçek Luma ekranlarıdır. Değerler bilgisayara ve o anki iş yüküne göre değişir.
 
 ![Özet: CPU, bellek, depolama, ağ ve pil](Docs/Images/dashboard.png)
 
@@ -68,17 +70,19 @@ Desteklenen genel API yoksa sıcaklık gösterilmez; masaüstü Mac'lerde pil ve
 
 ## Kurulum
 
-**macOS 15 veya üzeri gerekir.**
+**macOS 15 veya üzeri gerekir. Apple Silicon ve Intel desteklenir.**
 
-Yayınlanan resmi uygulama paketlerini [GitHub Releases](https://github.com/sekizlipenguen/luma-mac/releases) sayfasından edinin. Her sürümün mimari, imza ve noter onayı durumunu sürüm notlarından kontrol edin. Kaynak kod ZIP'i kurulabilir uygulama değildir; uygulama paketi henüz yoksa aşağıdaki derleme adımlarını kullanın.
+**[DMG indir — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [Uygulama ZIP'i](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256 doğrulama](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
 
-Uygulama ZIP'ini açın, `Luma.app` dosyasını Uygulamalar'a taşıyın ve açın. İmza/noter onayı durumu ilgili sürüm için ayrıca doğrulanmalıdır.
+DMG'yi açın, `Luma.app` dosyasını **Applications / Uygulamalar** klasörüne sürükleyin, disk imajını çıkarın ve uygulamayı Uygulamalar'dan açın. Alternatif olarak uygulama ZIP'ini açıp `Luma.app` dosyasını Uygulamalar'a taşıyın. GitHub'ın otomatik kaynak kod arşivleri kurulabilir uygulama içermez.
+
+**İlk ön sürüm (0.1.0) ad-hoc imzalıdır; Developer ID dağıtım imzası ve Apple noter onayı yoktur.** macOS ilk açılışı engellerse ve kaynağa güveniyorsanız, uygulamayı açmayı denedikten sonra **Sistem Ayarları → Gizlilik ve Güvenlik → Yine de Aç** yolunu kullanıp Aç'ı onaylayın. Kurumsal Mac'lerde bu izin kapalı olabilir. [Apple'ın yönergesi](https://support.apple.com/tr-tr/102445).
 
 - **Tam Disk Erişimi:** korunan kullanıcı Library konumları için Sistem Ayarları → Gizlilik ve Güvenlik → Tam Disk Erişimi bölümünden Luma'ya izin verin. İzin yoksa erişilemeyen alanlar atlanır.
 - **Finder:** sağ tık menüsü için macOS uzantı ayarlarından Finder uzantısını etkinleştirin; klasör boyutu Servisi de kullanılabilir.
 - **Simülatörler:** iOS için Xcode komut satırı araçları; Android için `adb` dahil Android SDK araçları gerekir.
 
-Luma desteklediği kullanıcı alanlarını tarayabilmek için App Sandbox'ı kapalı kullanır. Dağıtım kanalı GitHub Releases'tir; herkese açık uygulama paketlerinde Developer ID imzası ve Apple noter onayı hedeflenir.
+Luma desteklediği kullanıcı alanlarını tarayabilmek için App Sandbox'ı kapalı kullanır. Dağıtım kanalı GitHub Releases'tir; imza durumunu ilgili sürümden kontrol edin. Paketleme ve gelecekteki Developer ID dağıtımı [yayın rehberinde](Docs/Releasing.md) açıklanır.
 
 ## Kaynak koddan derleme
 

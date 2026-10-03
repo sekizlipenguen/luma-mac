@@ -16,9 +16,11 @@ Luma is a native SwiftUI utility for system monitoring, storage inspection, and 
 
 [Releases](https://github.com/sekizlipenguen/luma-mac/releases) · [Report a bug](https://github.com/sekizlipenguen/luma-mac/issues) · [License](LICENSE)
 
+**[Download DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip)
+
 ## A look inside
 
-Real screenshots of Luma on macOS, with the interface set to Turkish. Metrics vary with your Mac and workload.
+Real screenshots of Luma on macOS, with the interface set to English. Metrics vary with your Mac and workload.
 
 ![Dashboard: CPU, memory, storage, network and battery](Docs/Images/dashboard.png)
 
@@ -82,11 +84,13 @@ Unavailable information is labeled honestly: temperature may have no supported p
 
 ## Get Luma
 
-**Requires macOS 15 or later.**
+**Requires macOS 15 or later. Apple Silicon and Intel are supported.**
 
-Official application packages, when published, appear under [GitHub Releases](https://github.com/sekizlipenguen/luma-mac/releases). Check each release's notes for architecture, signing, and notarization status. A source-code ZIP is not an installable app; if no application asset is available yet, build from source below.
+**[Download DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [Application ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256 checksums](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
 
-For an application ZIP, extract it, move `Luma.app` to Applications, and open it. Follow macOS security prompts; signing and notarization must be checked for the specific release.
+Open the DMG, drag `Luma.app` to **Applications**, eject the disk image, and open Luma from Applications. Alternatively, extract the application ZIP and move `Luma.app` to Applications. GitHub's automatic source-code archives do not contain an installable app.
+
+**First public preview (0.1.0): ad-hoc signed, without Developer ID signing or Apple notarization.** macOS may block the first launch. If you trust this repository and the downloaded app, try opening Luma, then use **System Settings → Privacy & Security → Open Anyway**, and confirm Open. Managed Macs may prevent an exception. [Apple's instructions](https://support.apple.com/en-us/102445).
 
 ### Permissions and optional tools
 
@@ -94,7 +98,7 @@ For an application ZIP, extract it, move `Luma.app` to Applications, and open it
 - **Finder:** enable the bundled Finder extension in macOS extension settings for its context menu; the folder-size Service is another entry point.
 - **Simulators:** iOS features require Xcode command-line tools; Android features require Android SDK tools, including `adb`.
 
-Luma disables App Sandbox to inspect and maintain supported user areas. GitHub Releases is the intended distribution channel, with Developer ID signing and notarization for public application packages. Build success alone does not establish notarization.
+Luma disables App Sandbox to inspect and maintain supported user areas. Distribution is through GitHub Releases; check the specific release for signing status. The [release guide](Docs/Releasing.md) documents packaging and future Developer ID distribution.
 
 ## Build the unmodified source
 

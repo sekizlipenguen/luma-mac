@@ -6,6 +6,8 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
+**[DMG をダウンロード — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
 **Mac の状態を知り、容量を使っているものを見つけ、確認して整理。**
 
 Luma は、システム監視、ストレージ分析、Mac のメンテナンスのためのネイティブ SwiftUI アプリです。ローカルで動作し、アカウント、サブスクリプション、広告、テレメトリはありません。
@@ -38,7 +40,11 @@ Luma の設定 → 言語で選択するか、システムの言語に従う設�
 
 ## インストールと必要環境
 
-**macOS 15 以降。** 公式アプリパッケージは公開後に [Releases](https://github.com/sekizlipenguen/luma-mac/releases) へ掲載されます。各リリースのアーキテクチャ、署名、Apple 公証状況を確認してください。ソースコード ZIP はインストール用アプリではありません。アプリ ZIP を展開し、`Luma.app` をアプリケーションへ移動します。
+**macOS 15 以降 · Apple Silicon と Intel。** DMG を開き、`Luma.app` をアプリケーションへドラッグします。アプリ ZIP の展開でもインストールできます。ソースコードのアーカイブにはビルド済みアプリは含まれません。
+
+**[DMG をダウンロード — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
+**プレビュー 0.1.0:** アドホック署名のみで、Developer ID 署名と Apple 公証はありません。初回起動が macOS にブロックされる場合があります。配布元を信頼できる場合は Apple の手順に従ってこのアプリを許可してください。管理された Mac では許可されない場合があります。 [Apple](https://support.apple.com/en-us/102445).
 
 保護された Library フォルダには、システム設定 → プライバシーとセキュリティ → フルディスクアクセスから権限を付与します。権限がなければアクセスできない場所をスキップします。Finder 拡張は macOS の拡張設定で有効化できます。iOS には Xcode コマンドラインツール、Android には `adb` を含む SDK ツールが必要です。
 
@@ -58,7 +64,7 @@ xcodebuild -project Luma.xcodeproj -scheme Luma -configuration Release -derivedD
 
 ## スクリーンショット
 
-実際のアプリをトルコ語表示で撮影しています。数値は Mac と負荷によって変わります。
+実際のアプリを英語表示で撮影しています。数値は Mac と負荷によって変わります。
 
 ![概要](Docs/Images/dashboard.png)
 

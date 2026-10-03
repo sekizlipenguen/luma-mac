@@ -6,6 +6,8 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
+**[Scarica il DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
 **Capisci il tuo Mac. Scopri cosa occupa spazio. Pulisci mantenendo il controllo.**
 
 Luma è un’app nativa SwiftUI per monitorare il sistema, analizzare lo spazio e gestire la manutenzione del Mac. Funziona localmente, senza account, abbonamenti, pubblicità o telemetria.
@@ -38,7 +40,11 @@ Le funzioni principali sono locali. Le informazioni non disponibili vengono indi
 
 ## Installazione e requisiti
 
-**macOS 15 o successivo.** I pacchetti ufficiali, quando pubblicati, saranno su [Releases](https://github.com/sekizlipenguen/luma-mac/releases). Controlla architettura, firma e notarizzazione Apple di ogni versione. Un ZIP del codice sorgente non è un’app installabile. Estrai lo ZIP dell’app e sposta `Luma.app` in Applicazioni.
+**macOS 15 o successivo · Apple Silicon e Intel.** Apri il DMG e trascina `Luma.app` in Applicazioni. In alternativa estrai lo ZIP dell’app. Gli archivi del codice sorgente non contengono l’app compilata.
+
+**[Scarica il DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
+**Anteprima 0.1.0:** firma ad hoc, senza Developer ID né notarizzazione Apple. macOS può bloccare il primo avvio. Se ti fidi della fonte, segui le istruzioni Apple per autorizzare questa app. I Mac gestiti possono impedire questa eccezione. [Apple](https://support.apple.com/en-us/102445).
 
 Per le cartelle Library protette: Impostazioni di Sistema → Privacy e Sicurezza → Accesso completo al disco. Senza autorizzazione, Luma salta i percorsi inaccessibili. Attiva l’estensione Finder nelle impostazioni delle estensioni macOS se necessaria. iOS richiede strumenti da riga di comando Xcode; Android richiede strumenti SDK, incluso `adb`.
 
@@ -58,7 +64,7 @@ Risultato: `build/Build/Products/Release/Luma.app`.
 
 ## Schermate
 
-Schermate reali con interfaccia turca; i valori variano in base al Mac e al carico.
+Schermate reali con interfaccia inglese; i valori variano in base al Mac e al carico.
 
 ![Panoramica](Docs/Images/dashboard.png)
 

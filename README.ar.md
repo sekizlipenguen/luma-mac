@@ -6,6 +6,8 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
+**[تنزيل DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
 **افهم ما يفعله جهاز Mac، واعرف ما يشغل المساحة، ونظّف بعد المراجعة.**
 
 Luma تطبيق أصلي مبني باستخدام SwiftUI لمراقبة النظام وتحليل التخزين وصيانة Mac. يعمل محليًا دون حساب أو اشتراك أو إعلانات أو تتبع عن بُعد.
@@ -38,7 +40,11 @@ English · Türkçe · Deutsch · Français · Español · Italiano · Portuguê
 
 ## التثبيت والمتطلبات
 
-**macOS 15 أو أحدث.** تظهر حزم التطبيق الرسمية بعد نشرها في [Releases](https://github.com/sekizlipenguen/luma-mac/releases). راجع المعمارية والتوقيع وتصديق Apple لكل إصدار. ملف ZIP للمصدر ليس تطبيقًا جاهزًا للتثبيت. فك ضغط حزمة التطبيق وانقل `Luma.app` إلى التطبيقات.
+**macOS 15 أو أحدث · Apple Silicon وIntel.** افتح DMG واسحب `Luma.app` إلى التطبيقات. يمكنك أيضًا فك ضغط ZIP الخاص بالتطبيق. أرشيفات المصدر لا تتضمن التطبيق المبني.
+
+**[تنزيل DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+
+**معاينة 0.1.0:** توقيع ad hoc فقط، دون Developer ID أو تصديق Apple. قد يمنع macOS التشغيل الأول. إذا كنت تثق بالمصدر، اتبع تعليمات Apple للسماح لهذا التطبيق. قد تمنع أجهزة Mac المُدارة هذا الاستثناء. [Apple](https://support.apple.com/en-us/102445).
 
 للوصول إلى مجلدات Library المحمية، امنح الوصول الكامل إلى القرص من إعدادات النظام ← الخصوصية والأمان. دون الإذن تُتخطّى المواقع غير المتاحة. يمكن تفعيل إضافة Finder من إعدادات إضافات macOS. يحتاج iOS إلى أدوات سطر أوامر Xcode، ويحتاج Android إلى أدوات SDK بما فيها `adb`.
 
@@ -58,7 +64,7 @@ xcodebuild -project Luma.xcodeproj -scheme Luma -configuration Release -derivedD
 
 ## لقطات الشاشة
 
-لقطات حقيقية للتطبيق بواجهة تركية؛ تختلف القيم حسب الجهاز وعبء العمل.
+لقطات حقيقية للتطبيق بواجهة إنجليزية؛ تختلف القيم حسب الجهاز وعبء العمل.
 
 ![الملخص](Docs/Images/dashboard.png)
 
