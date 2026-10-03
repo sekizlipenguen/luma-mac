@@ -1,0 +1,19 @@
+name: Feature suggestion
+description: Suggest an improvement for the maintainers.
+title: "[Idea]: "
+body:
+  - type: markdown
+    attributes:
+      value: Suggestions are welcome. Source modifications require prior written permission under LICENSE.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true

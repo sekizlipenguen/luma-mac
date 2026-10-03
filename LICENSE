@@ -1,0 +1,85 @@
+Luma Free Use, No Modification License
+Version 1.0
+
+Copyright (c) 2026 Luma Contributors
+
+1. Scope
+
+"Software" means the Luma source code, application binaries, documentation,
+and other project materials supplied with this license, excluding materials
+expressly subject to another license. "Licensor" means the copyright holders
+of the Software. The official project is maintained at
+https://github.com/sekizlipenguen/luma-mac.
+
+2. Free and unlimited use
+
+Subject to this license, the Licensor grants every person and organization a
+worldwide, non-exclusive, royalty-free license to download, install, execute,
+and use the unmodified Software for any lawful purpose, including personal,
+educational, internal business, and commercial use. There are no limits on
+users, devices, installations, executions, features, or duration of use.
+No subscription, license fee, or usage payment is required.
+
+3. Inspection, compilation, and unchanged copies
+
+You may inspect and compile the source without modifying application code,
+behavior, resources, or documentation. You may generate project files and
+adjust only build, signing, provisioning, or local installation metadata as
+necessary to compile and run the unmodified Software. Normal configuration
+through the Software's supported runtime settings is permitted.
+
+You may make backups and redistribute exact, unmodified copies of the source
+or official binaries, preserving this license and all copyright, attribution,
+and other legal notices. Do not imply endorsement by the Licensor or represent
+your redistribution as an official release. You may not impose additional
+restrictions that prevent recipients from exercising these rights.
+
+4. No modification or derivative works
+
+Except for the narrow build and runtime configuration permissions in section
+3, you may not modify, adapt, translate, patch, merge, or create derivative
+works of the Software, whether for private use or public distribution.
+In particular, modifying your own copy is not permitted.
+
+Without prior written permission from the relevant copyright holders, you
+may not distribute modified versions, extract or incorporate the Software's
+code into another product, rebrand it, or sublicense it under other terms.
+Changes made by copyright holders or expressly authorized maintainers are
+not restricted by this license.
+
+5. Platform rights and other licenses
+
+Nothing limits rights that cannot lawfully be restricted, including applicable
+copyright exceptions. The hosting platform's rights to view or fork a public
+repository remain unaffected; a fork does not by itself grant permission to
+modify the Software or create derivative works.
+
+Third-party materials retain their respective licenses. This license does not
+withdraw or restrict rights already granted for copies previously distributed
+under another license. Such copies remain subject to their original terms;
+this license applies to copies supplied under this license.
+
+6. Attribution and trademarks
+
+Retain this license and existing copyright and attribution notices with all
+copies. No trademark rights or right to suggest sponsorship or endorsement
+are granted. Rights not expressly granted are reserved by the Licensor.
+
+7. Termination
+
+Permissions terminate if you materially breach this license. Otherwise, the
+free-use grant for copies received under this license does not expire and is
+not revoked merely because a later release uses different terms.
+
+8. Disclaimer and limitation of liability
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. TO THE MAXIMUM EXTENT
+PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+This is a source-available license, not an OSI-approved open-source license:
+it does not grant modification or derivative-work rights.

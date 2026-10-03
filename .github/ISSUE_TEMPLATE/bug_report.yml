@@ -1,0 +1,45 @@
+name: Bug report
+description: Report an issue with Luma.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remove personal paths, IP addresses, credentials, and private file names from attachments.
+        For vulnerabilities, follow SECURITY.md instead of posting details here.
+  - type: input
+    id: version
+    attributes:
+      label: Luma version
+      placeholder: "0.1.0 (build 9)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and architecture
+      placeholder: "macOS version; Apple Silicon or Intel"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context or screenshots

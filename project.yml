@@ -1,0 +1,118 @@
+name: Luma
+options:
+  bundleIdPrefix: dev.luma
+  deploymentTarget:
+    macOS: "15.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  developmentLanguage: en
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "15.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    CODE_SIGN_STYLE: Automatic
+    DEAD_CODE_STRIPPING: YES
+packages:
+  LumaCore:
+    path: Packages/LumaCore
+  LumaSupport:
+    path: Packages/LumaSupport
+  LumaSystem:
+    path: Packages/LumaSystem
+  LumaStorage:
+    path: Packages/LumaStorage
+  LumaCleanup:
+    path: Packages/LumaCleanup
+  LumaApps:
+    path: Packages/LumaApps
+  LumaStartup:
+    path: Packages/LumaStartup
+  LumaUI:
+    path: Packages/LumaUI
+targets:
+  Luma:
+    type: application
+    platform: macOS
+    sources:
+      - path: Luma
+      - path: LICENSE
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.luma.app
+        PRODUCT_NAME: Luma
+        INFOPLIST_FILE: Luma/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Luma/Resources/Luma.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+        LD_RUNPATH_SEARCH_PATHS: "@executable_path/../Frameworks"
+        ENABLE_APP_SANDBOX: NO
+        COMBINE_HIDPI_IMAGES: YES
+        SWIFT_STRICT_CONCURRENCY: complete
+    dependencies:
+      - package: LumaCore
+      - package: LumaSupport
+      - package: LumaSystem
+      - package: LumaStorage
+      - package: LumaCleanup
+      - package: LumaApps
+      - package: LumaStartup
+      - package: LumaUI
+      - target: LumaFinderSync
+        embed: true
+    scheme:
+      testTargets:
+        - LumaTests
+        - LumaUITests
+  LumaFinderSync:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: LumaFinderSync
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.luma.app.findersync
+        PRODUCT_NAME: LumaFinderSync
+        INFOPLIST_FILE: LumaFinderSync/Info.plist
+        CODE_SIGN_ENTITLEMENTS: LumaFinderSync/LumaFinderSync.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+        ENABLE_APP_SANDBOX: NO
+        COMBINE_HIDPI_IMAGES: YES
+        LD_RUNPATH_SEARCH_PATHS: "@executable_path/../../../../Frameworks"
+        SWIFT_STRICT_CONCURRENCY: complete
+    dependencies:
+      - sdk: FinderSync.framework
+  LumaTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: LumaTests
+    dependencies:
+      - package: LumaCore
+      - package: LumaSupport
+      - package: LumaCleanup
+      - package: LumaStorage
+      - package: LumaSystem
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.luma.tests
+        GENERATE_INFOPLIST_FILE: YES
+        # Logic tests only — do not host inside Luma.app (SwiftUI MenuBarExtra hangs XCTest).
+        BUNDLE_LOADER: ""
+        TEST_HOST: ""
+  LumaUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - path: LumaUITests
+    dependencies:
+      - target: Luma
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.luma.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGNING_ALLOWED: "YES"
+        ENABLE_HARDENED_RUNTIME: NO

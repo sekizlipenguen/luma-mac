@@ -1,0 +1,1071 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00285CB4D5B0489576AE75D2 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9792033C7FB585DAB8D46C /* DashboardViewModel.swift */; };
+		016CC27CF93FC5395B2CB31F /* FeatureScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0F7E3EEB67822317D0B78 /* FeatureScreens.swift */; };
+		120D899F4C3AFD1E342B0538 /* EmulatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEAE1CDF52FB44B83642DD3 /* EmulatorsView.swift */; };
+		137816B417A865C97F935A00 /* LumaSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A76C4F8C8B55A19B1DF84061 /* LumaSystem */; };
+		1EF8716456A3904361C9E39E /* LumaCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8AAE9835952B0466437F6A85 /* LumaCore */; };
+		22160BE49409AC51958A2FD1 /* MoreScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D17E5BBDB50FB00B7539DB /* MoreScreens.swift */; };
+		231CB829C256AAB0390CF5F3 /* FeatureViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7B8382FCE4088C255A503 /* FeatureViewModels.swift */; };
+		23AE47B738853110F72C0580 /* LumaCore in Frameworks */ = {isa = PBXBuildFile; productRef = F8E88AAD9C7EC9EDA2728F6C /* LumaCore */; };
+		24E3C4EEC4EB5116982D2F4E /* LumaStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 59F4AA995E6392F4022BC5B8 /* LumaStorage */; };
+		265E8DA30CF9D4330C334CEC /* FolderSizeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E54D63692489D47D3969F /* FolderSizeSession.swift */; };
+		290AAA002B7F781E630364C6 /* LumaServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4883A5C757D6696858AE1F /* LumaServiceProvider.swift */; };
+		2E48C94B812BA6CE55D692C8 /* MoreViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CF60BBCAE8FEF22D5930E /* MoreViewModels.swift */; };
+		395044E302366D03D02EF11D /* LumaFinderSync.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 801314858973A4954AD555A2 /* LumaFinderSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BD3E72D45F27FDF9F88053C /* LumaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3C84E772181DAD04F3A51E7C /* LumaUI */; };
+		47AF77B1187BEE3989448F37 /* FolderSizePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF74AB07BEF952C9C1A1521 /* FolderSizePanel.swift */; };
+		4E0362A74E51E08926EFF084 /* LumaSystem in Frameworks */ = {isa = PBXBuildFile; productRef = E4E97FDB16109ED4B10375EC /* LumaSystem */; };
+		50E4E8E139E8485EB7656A0E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D58EEA623FB277211729AE6 /* AppEnvironment.swift */; };
+		5E400641A985CFC02A9B908F /* ListSortOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71589482A482E0AD5A3A14A3 /* ListSortOptions.swift */; };
+		6DBF41DC6072F17E588A8DCE /* LumaCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3A8AAC81240BE10541739 /* LumaCoreTests.swift */; };
+		6EA99B31ADA393886DCCF613 /* ListCardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFCF010EF5059FE6F8B384 /* ListCardLayout.swift */; };
+		79960BA092693D88E3B43AE0 /* LumaFinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E043B34F019D04F913CD316F /* LumaFinderSync.swift */; };
+		7B78358108A103C277600BE8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 13CE3A6F90EFED0E128E2033 /* LICENSE */; };
+		7BC9118D76C89E165DE986E3 /* LumaCleanup in Frameworks */ = {isa = PBXBuildFile; productRef = E9E22E51066C7C21215B6844 /* LumaCleanup */; };
+		7CB2E75125C50C5AB18A19B0 /* LumaStartup in Frameworks */ = {isa = PBXBuildFile; productRef = 7D2F165252A1F4DA6C56C022 /* LumaStartup */; };
+		83BFA601CD5412F11BA4FE05 /* LumaStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F63CE87C6C9B75610F099A65 /* LumaStorage */; };
+		842BE3E3BC153EE3D7E9D6F2 /* CPUProcessesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D173842A6A8DF5E6FD78A /* CPUProcessesView.swift */; };
+		8B9C3647B9F5F146F62B46F6 /* RunningEmulatorsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17AC7379317C9CF468832D /* RunningEmulatorsCard.swift */; };
+		992195D6AE64DF2C24A52956 /* LumaSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A6A56DD0A38830A83275A16C /* LumaSupport */; };
+		9934FA32A7265B2F60EEB7C1 /* CPUProcessesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF74B0587E68FF17260B7 /* CPUProcessesCard.swift */; };
+		9976B913C13FDB83AE719EBF /* LumaWindowFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0C36CCE1CAD714D2F5ED8 /* LumaWindowFocus.swift */; };
+		A04FBBF5E9BF3A2583778B7E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C82C646349129C1089023 /* Localizable.xcstrings */; };
+		A46A24D67822AA2F6CB7211F /* StorageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72290B3D8167A0314B9425 /* StorageViews.swift */; };
+		A59690B36BF01F4753BBE409 /* EmulatorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A37131EEBCDEFC9B2706EE /* EmulatorsViewModel.swift */; };
+		A89DE2B789BC539314559B67 /* QuickCleanupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF84C546EF9284F26482CA /* QuickCleanupView.swift */; };
+		B9524DB044668E2458BFF740 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990173B3A2E869445F805539 /* MemoryView.swift */; };
+		C111832D0F5E8B25A6F075B9 /* LumaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449762D0503C1160CABF3044 /* LumaUITests.swift */; };
+		C66BC6488886D419AFB5B0E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B799DA8977D0C9FFCB2BE7 /* ContentView.swift */; };
+		E87CBF35435ACE34B6F59A5A /* LumaApps in Frameworks */ = {isa = PBXBuildFile; productRef = E526FF4B6A1C6C8734A11424 /* LumaApps */; };
+		EA378A59BEA2E41CCC873A78 /* LumaSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5B56D6384296B01F3A4868 /* LumaSupport */; };
+		EB780DB900D10A6FB9E428D7 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74086C76C36079E4E094EE /* NetworkView.swift */; };
+		F287F5BC4314ED0387ADBF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A0AFCEBA455AF908BFCD4A /* Assets.xcassets */; };
+		F4905D603BE4727EFC8CAAC2 /* SizeThresholdChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474EBBF0D6A02D4B471BCDDA /* SizeThresholdChoice.swift */; };
+		F98B79B0D403A927F474B879 /* LumaCleanup in Frameworks */ = {isa = PBXBuildFile; productRef = 06EEA5FD4596BB9871A71EC1 /* LumaCleanup */; };
+		FB0B6292E4116FC0E87785E6 /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D01AD8527579B34567C2A2 /* FinderSync.framework */; };
+		FE39159D7F43045F57D14485 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FD7BBBE62F119E4A5CB3F /* DashboardView.swift */; };
+		FE8EBAE3FFC880C8C1CA1672 /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADBD5238C69B2AE6434CFAE /* NetworkViewModel.swift */; };
+		FF9D5E3756499849982A58E4 /* LumaStatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A14BE86EB19AA88222E0E /* LumaStatusItemController.swift */; };
+		FFD76A09DEFE3E5CB5BDE8CD /* LumaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8622749F5D1B6614FE2B1EC3 /* LumaApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C11B532C3E49BFC250264FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AACE5AD3943208FFB6B19277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CF493225BEE4731E48A1EB;
+			remoteInfo = LumaFinderSync;
+		};
+		5C6218BA484572FDB4727ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AACE5AD3943208FFB6B19277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0565F6C7DA26F0482928704E;
+			remoteInfo = Luma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F72A3F74BEAA7DB6EB42B5A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				395044E302366D03D02EF11D /* LumaFinderSync.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AA6F19EA8C1572252F5244A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		10FCA99544F320E5E47C93FF /* LumaCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaCore; path = Packages/LumaCore; sourceTree = SOURCE_ROOT; };
+		13CE3A6F90EFED0E128E2033 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		16F7B8382FCE4088C255A503 /* FeatureViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewModels.swift; sourceTree = "<group>"; };
+		1C1C82C646349129C1089023 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1C1D173842A6A8DF5E6FD78A /* CPUProcessesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUProcessesView.swift; sourceTree = "<group>"; };
+		2D2EA387CACB7D2F4D660F04 /* LumaUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaUI; path = Packages/LumaUI; sourceTree = SOURCE_ROOT; };
+		2DF74AB07BEF952C9C1A1521 /* FolderSizePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderSizePanel.swift; sourceTree = "<group>"; };
+		36F0C36CCE1CAD714D2F5ED8 /* LumaWindowFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaWindowFocus.swift; sourceTree = "<group>"; };
+		3B4883A5C757D6696858AE1F /* LumaServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaServiceProvider.swift; sourceTree = "<group>"; };
+		3BBFF74B0587E68FF17260B7 /* CPUProcessesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUProcessesCard.swift; sourceTree = "<group>"; };
+		3C2A14BE86EB19AA88222E0E /* LumaStatusItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaStatusItemController.swift; sourceTree = "<group>"; };
+		3D72290B3D8167A0314B9425 /* StorageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViews.swift; sourceTree = "<group>"; };
+		449762D0503C1160CABF3044 /* LumaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaUITests.swift; sourceTree = "<group>"; };
+		474EBBF0D6A02D4B471BCDDA /* SizeThresholdChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeThresholdChoice.swift; sourceTree = "<group>"; };
+		47BBB7CD0BF98CC0117C0786 /* LumaSupport */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaSupport; path = Packages/LumaSupport; sourceTree = SOURCE_ROOT; };
+		4AD3A8AAC81240BE10541739 /* LumaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaCoreTests.swift; sourceTree = "<group>"; };
+		4ADBD5238C69B2AE6434CFAE /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
+		50E321A205DFD419BD2D3A5E /* Luma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luma.entitlements; sourceTree = "<group>"; };
+		52D17E5BBDB50FB00B7539DB /* MoreScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreScreens.swift; sourceTree = "<group>"; };
+		5B9792033C7FB585DAB8D46C /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		6317FAA29F22A3EA8450208F /* LumaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		641CF60BBCAE8FEF22D5930E /* MoreViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewModels.swift; sourceTree = "<group>"; };
+		68DC6AE6AFE6E9DD695148B6 /* LumaFinderSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LumaFinderSync.entitlements; sourceTree = "<group>"; };
+		6D58EEA623FB277211729AE6 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		71589482A482E0AD5A3A14A3 /* ListSortOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSortOptions.swift; sourceTree = "<group>"; };
+		734E54D63692489D47D3969F /* FolderSizeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderSizeSession.swift; sourceTree = "<group>"; };
+		736FD7BBBE62F119E4A5CB3F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		7E74086C76C36079E4E094EE /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		801314858973A4954AD555A2 /* LumaFinderSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LumaFinderSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C2FC6184855382F5E5050A /* LumaSystem */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaSystem; path = Packages/LumaSystem; sourceTree = SOURCE_ROOT; };
+		8622749F5D1B6614FE2B1EC3 /* LumaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaApp.swift; sourceTree = "<group>"; };
+		89402CE7AAA1AF703AC18CA8 /* LumaStartup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaStartup; path = Packages/LumaStartup; sourceTree = SOURCE_ROOT; };
+		8C17AC7379317C9CF468832D /* RunningEmulatorsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningEmulatorsCard.swift; sourceTree = "<group>"; };
+		96720381802141EBA1DA9772 /* LumaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		968548F16EEBC19B5BFDFCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		990173B3A2E869445F805539 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
+		9EC4080E663A024CE8F916E4 /* LumaStorage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaStorage; path = Packages/LumaStorage; sourceTree = SOURCE_ROOT; };
+		A08E8E78A79794D68CF53C17 /* LumaCleanup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaCleanup; path = Packages/LumaCleanup; sourceTree = SOURCE_ROOT; };
+		A8A37131EEBCDEFC9B2706EE /* EmulatorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorsViewModel.swift; sourceTree = "<group>"; };
+		C5D01AD8527579B34567C2A2 /* FinderSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinderSync.framework; path = System/Library/Frameworks/FinderSync.framework; sourceTree = SDKROOT; };
+		D2FF84C546EF9284F26482CA /* QuickCleanupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCleanupView.swift; sourceTree = "<group>"; };
+		D8A0AFCEBA455AF908BFCD4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF8C531E464C9C4EDE2648C6 /* Luma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E043B34F019D04F913CD316F /* LumaFinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaFinderSync.swift; sourceTree = "<group>"; };
+		E6B799DA8977D0C9FFCB2BE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E7D91D2AFFFDEAF95DE951B9 /* LumaApps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaApps; path = Packages/LumaApps; sourceTree = SOURCE_ROOT; };
+		FAEAE1CDF52FB44B83642DD3 /* EmulatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorsView.swift; sourceTree = "<group>"; };
+		FAFFCF010EF5059FE6F8B384 /* ListCardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardLayout.swift; sourceTree = "<group>"; };
+		FCF0F7E3EEB67822317D0B78 /* FeatureScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureScreens.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		767AC4FCC10BBE2E6F5ADC7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF8716456A3904361C9E39E /* LumaCore in Frameworks */,
+				EA378A59BEA2E41CCC873A78 /* LumaSupport in Frameworks */,
+				7BC9118D76C89E165DE986E3 /* LumaCleanup in Frameworks */,
+				83BFA601CD5412F11BA4FE05 /* LumaStorage in Frameworks */,
+				4E0362A74E51E08926EFF084 /* LumaSystem in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92851BF2C5B16132606CA483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0B6292E4116FC0E87785E6 /* FinderSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D6F6F04126826503BA1E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23AE47B738853110F72C0580 /* LumaCore in Frameworks */,
+				992195D6AE64DF2C24A52956 /* LumaSupport in Frameworks */,
+				137816B417A865C97F935A00 /* LumaSystem in Frameworks */,
+				24E3C4EEC4EB5116982D2F4E /* LumaStorage in Frameworks */,
+				F98B79B0D403A927F474B879 /* LumaCleanup in Frameworks */,
+				E87CBF35435ACE34B6F59A5A /* LumaApps in Frameworks */,
+				7CB2E75125C50C5AB18A19B0 /* LumaStartup in Frameworks */,
+				3BD3E72D45F27FDF9F88053C /* LumaUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071C052172DBA7DD20F9AF38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7E74086C76C36079E4E094EE /* NetworkView.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2559744A43A60F9AD3D9B1C6 /* Processes */ = {
+			isa = PBXGroup;
+			children = (
+				3BBFF74B0587E68FF17260B7 /* CPUProcessesCard.swift */,
+				1C1D173842A6A8DF5E6FD78A /* CPUProcessesView.swift */,
+			);
+			path = Processes;
+			sourceTree = "<group>";
+		};
+		28750BF4493688F1442DC488 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				736FD7BBBE62F119E4A5CB3F /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4295DFC07B25B9364749B4DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA7149556EE21E7E7C2C0F /* Cleaner */,
+				87320424880659D983037C6A /* Components */,
+				28750BF4493688F1442DC488 /* Dashboard */,
+				65A5137A5964ADC2F9D26922 /* Emulators */,
+				E612C9921337947B719CDA8E /* Memory */,
+				071C052172DBA7DD20F9AF38 /* Network */,
+				2559744A43A60F9AD3D9B1C6 /* Processes */,
+				9906901248A63F17A01D8D28 /* Settings */,
+				BD29805853BBEFF8F9E175ED /* Storage */,
+				E6B799DA8977D0C9FFCB2BE7 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56B965F3366E62652474AD8C /* Luma */ = {
+			isa = PBXGroup;
+			children = (
+				F7B8EB9E5BC798304FA24A89 /* App */,
+				831886F2D8C0E4573C7B246C /* Resources */,
+				CEC16FCFB9E9FD15ADB23AFD /* Services */,
+				E9A7A282B1B94F45577C9334 /* Support */,
+				A399583EF29556E46E3331D3 /* ViewModels */,
+				4295DFC07B25B9364749B4DC /* Views */,
+			);
+			path = Luma;
+			sourceTree = "<group>";
+		};
+		65A5137A5964ADC2F9D26922 /* Emulators */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE1CDF52FB44B83642DD3 /* EmulatorsView.swift */,
+				8C17AC7379317C9CF468832D /* RunningEmulatorsCard.swift */,
+			);
+			path = Emulators;
+			sourceTree = "<group>";
+		};
+		751CBF99010567D043B5DA42 = {
+			isa = PBXGroup;
+			children = (
+				56B965F3366E62652474AD8C /* Luma */,
+				E1BA940EFE978AC035B6EDCF /* LumaFinderSync */,
+				E003F8E3CE0B21F5493C379F /* LumaTests */,
+				E5D49034F4CFE896FC801A4A /* LumaUITests */,
+				FFFA7B7564720060678770FC /* Packages */,
+				13CE3A6F90EFED0E128E2033 /* LICENSE */,
+				EE1841CEDF59C741D1C8179E /* Frameworks */,
+				90CFB4B53B5F9EF91D718FC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		831886F2D8C0E4573C7B246C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0AFCEBA455AF908BFCD4A /* Assets.xcassets */,
+				968548F16EEBC19B5BFDFCD9 /* Info.plist */,
+				1C1C82C646349129C1089023 /* Localizable.xcstrings */,
+				50E321A205DFD419BD2D3A5E /* Luma.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87320424880659D983037C6A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF84C546EF9284F26482CA /* QuickCleanupView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		90CFB4B53B5F9EF91D718FC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C531E464C9C4EDE2648C6 /* Luma.app */,
+				801314858973A4954AD555A2 /* LumaFinderSync.appex */,
+				6317FAA29F22A3EA8450208F /* LumaTests.xctest */,
+				96720381802141EBA1DA9772 /* LumaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9906901248A63F17A01D8D28 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				52D17E5BBDB50FB00B7539DB /* MoreScreens.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A2CA7149556EE21E7E7C2C0F /* Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				FCF0F7E3EEB67822317D0B78 /* FeatureScreens.swift */,
+			);
+			path = Cleaner;
+			sourceTree = "<group>";
+		};
+		A399583EF29556E46E3331D3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5B9792033C7FB585DAB8D46C /* DashboardViewModel.swift */,
+				A8A37131EEBCDEFC9B2706EE /* EmulatorsViewModel.swift */,
+				16F7B8382FCE4088C255A503 /* FeatureViewModels.swift */,
+				641CF60BBCAE8FEF22D5930E /* MoreViewModels.swift */,
+				4ADBD5238C69B2AE6434CFAE /* NetworkViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BD29805853BBEFF8F9E175ED /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2DF74AB07BEF952C9C1A1521 /* FolderSizePanel.swift */,
+				3D72290B3D8167A0314B9425 /* StorageViews.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		CEC16FCFB9E9FD15ADB23AFD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				734E54D63692489D47D3969F /* FolderSizeSession.swift */,
+				3B4883A5C757D6696858AE1F /* LumaServiceProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E003F8E3CE0B21F5493C379F /* LumaTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AD3A8AAC81240BE10541739 /* LumaCoreTests.swift */,
+			);
+			path = LumaTests;
+			sourceTree = "<group>";
+		};
+		E1BA940EFE978AC035B6EDCF /* LumaFinderSync */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6F19EA8C1572252F5244A /* Info.plist */,
+				68DC6AE6AFE6E9DD695148B6 /* LumaFinderSync.entitlements */,
+				E043B34F019D04F913CD316F /* LumaFinderSync.swift */,
+			);
+			path = LumaFinderSync;
+			sourceTree = "<group>";
+		};
+		E5D49034F4CFE896FC801A4A /* LumaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				449762D0503C1160CABF3044 /* LumaUITests.swift */,
+			);
+			path = LumaUITests;
+			sourceTree = "<group>";
+		};
+		E612C9921337947B719CDA8E /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				990173B3A2E869445F805539 /* MemoryView.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		E9A7A282B1B94F45577C9334 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFCF010EF5059FE6F8B384 /* ListCardLayout.swift */,
+				71589482A482E0AD5A3A14A3 /* ListSortOptions.swift */,
+				474EBBF0D6A02D4B471BCDDA /* SizeThresholdChoice.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EE1841CEDF59C741D1C8179E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5D01AD8527579B34567C2A2 /* FinderSync.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7B8EB9E5BC798304FA24A89 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6D58EEA623FB277211729AE6 /* AppEnvironment.swift */,
+				8622749F5D1B6614FE2B1EC3 /* LumaApp.swift */,
+				3C2A14BE86EB19AA88222E0E /* LumaStatusItemController.swift */,
+				36F0C36CCE1CAD714D2F5ED8 /* LumaWindowFocus.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FFFA7B7564720060678770FC /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E7D91D2AFFFDEAF95DE951B9 /* LumaApps */,
+				A08E8E78A79794D68CF53C17 /* LumaCleanup */,
+				10FCA99544F320E5E47C93FF /* LumaCore */,
+				89402CE7AAA1AF703AC18CA8 /* LumaStartup */,
+				9EC4080E663A024CE8F916E4 /* LumaStorage */,
+				47BBB7CD0BF98CC0117C0786 /* LumaSupport */,
+				80C2FC6184855382F5E5050A /* LumaSystem */,
+				2D2EA387CACB7D2F4D660F04 /* LumaUI */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0565F6C7DA26F0482928704E /* Luma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39082DED094B543B7F177A5B /* Build configuration list for PBXNativeTarget "Luma" */;
+			buildPhases = (
+				71162CE529E90DAEDA4BB5A5 /* Sources */,
+				988CDDC80A2A68B4C03DF20F /* Resources */,
+				94D6F6F04126826503BA1E53 /* Frameworks */,
+				5F72A3F74BEAA7DB6EB42B5A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6066D40FAA70E2242A366297 /* PBXTargetDependency */,
+			);
+			name = Luma;
+			packageProductDependencies = (
+				F8E88AAD9C7EC9EDA2728F6C /* LumaCore */,
+				A6A56DD0A38830A83275A16C /* LumaSupport */,
+				A76C4F8C8B55A19B1DF84061 /* LumaSystem */,
+				59F4AA995E6392F4022BC5B8 /* LumaStorage */,
+				06EEA5FD4596BB9871A71EC1 /* LumaCleanup */,
+				E526FF4B6A1C6C8734A11424 /* LumaApps */,
+				7D2F165252A1F4DA6C56C022 /* LumaStartup */,
+				3C84E772181DAD04F3A51E7C /* LumaUI */,
+			);
+			productName = Luma;
+			productReference = DF8C531E464C9C4EDE2648C6 /* Luma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91CF493225BEE4731E48A1EB /* LumaFinderSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C02CB80ED17D52A62EEEBB /* Build configuration list for PBXNativeTarget "LumaFinderSync" */;
+			buildPhases = (
+				DABC656D20F68554B46C3068 /* Sources */,
+				92851BF2C5B16132606CA483 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LumaFinderSync;
+			packageProductDependencies = (
+			);
+			productName = LumaFinderSync;
+			productReference = 801314858973A4954AD555A2 /* LumaFinderSync.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A086B6D25E7969CB643F1C8A /* LumaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06AF122279B2585E145DB210 /* Build configuration list for PBXNativeTarget "LumaUITests" */;
+			buildPhases = (
+				DE1009798E1797BDAC72B608 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C675A3F8639BBF6792B09F39 /* PBXTargetDependency */,
+			);
+			name = LumaUITests;
+			packageProductDependencies = (
+			);
+			productName = LumaUITests;
+			productReference = 96720381802141EBA1DA9772 /* LumaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D4CD85C144854C8DA57B3903 /* LumaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DA00EB8A99448AEEE86A94 /* Build configuration list for PBXNativeTarget "LumaTests" */;
+			buildPhases = (
+				CEE668F703A2CB9893788D3A /* Sources */,
+				767AC4FCC10BBE2E6F5ADC7F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LumaTests;
+			packageProductDependencies = (
+				8AAE9835952B0466437F6A85 /* LumaCore */,
+				5B5B56D6384296B01F3A4868 /* LumaSupport */,
+				E9E22E51066C7C21215B6844 /* LumaCleanup */,
+				F63CE87C6C9B75610F099A65 /* LumaStorage */,
+				E4E97FDB16109ED4B10375EC /* LumaSystem */,
+			);
+			productName = LumaTests;
+			productReference = 6317FAA29F22A3EA8450208F /* LumaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AACE5AD3943208FFB6B19277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0565F6C7DA26F0482928704E = {
+						ProvisioningStyle = Automatic;
+					};
+					91CF493225BEE4731E48A1EB = {
+						ProvisioningStyle = Automatic;
+					};
+					A086B6D25E7969CB643F1C8A = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0565F6C7DA26F0482928704E;
+					};
+					D4CD85C144854C8DA57B3903 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DEFB5A06B29D6BCD602A2291 /* Build configuration list for PBXProject "Luma" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ar,
+				de,
+				en,
+				es,
+				fr,
+				it,
+				ja,
+				ko,
+				"pt-BR",
+				ru,
+				tr,
+				"zh-Hans",
+			);
+			mainGroup = 751CBF99010567D043B5DA42;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BB50759D60A80D8CD2264EF3 /* XCLocalSwiftPackageReference "Packages/LumaApps" */,
+				0E1EBAFA90D5A9FA5C8AAFEB /* XCLocalSwiftPackageReference "Packages/LumaCleanup" */,
+				B43BD5D25FC518CC4E6E67EE /* XCLocalSwiftPackageReference "Packages/LumaCore" */,
+				9D7207455D6A0CA3427B4B63 /* XCLocalSwiftPackageReference "Packages/LumaStartup" */,
+				7ECBB88F7AA5B940D8EC06CB /* XCLocalSwiftPackageReference "Packages/LumaStorage" */,
+				B7CF17E0AAAE97A31EFDB0A7 /* XCLocalSwiftPackageReference "Packages/LumaSupport" */,
+				0B846EE48DE4D6E7E124E1EC /* XCLocalSwiftPackageReference "Packages/LumaSystem" */,
+				185067D4B7C92A1019C46D9E /* XCLocalSwiftPackageReference "Packages/LumaUI" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 90CFB4B53B5F9EF91D718FC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0565F6C7DA26F0482928704E /* Luma */,
+				91CF493225BEE4731E48A1EB /* LumaFinderSync */,
+				D4CD85C144854C8DA57B3903 /* LumaTests */,
+				A086B6D25E7969CB643F1C8A /* LumaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		988CDDC80A2A68B4C03DF20F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F287F5BC4314ED0387ADBF8E /* Assets.xcassets in Resources */,
+				7B78358108A103C277600BE8 /* LICENSE in Resources */,
+				A04FBBF5E9BF3A2583778B7E /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71162CE529E90DAEDA4BB5A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E4E8E139E8485EB7656A0E /* AppEnvironment.swift in Sources */,
+				9934FA32A7265B2F60EEB7C1 /* CPUProcessesCard.swift in Sources */,
+				842BE3E3BC153EE3D7E9D6F2 /* CPUProcessesView.swift in Sources */,
+				C66BC6488886D419AFB5B0E3 /* ContentView.swift in Sources */,
+				FE39159D7F43045F57D14485 /* DashboardView.swift in Sources */,
+				00285CB4D5B0489576AE75D2 /* DashboardViewModel.swift in Sources */,
+				120D899F4C3AFD1E342B0538 /* EmulatorsView.swift in Sources */,
+				A59690B36BF01F4753BBE409 /* EmulatorsViewModel.swift in Sources */,
+				016CC27CF93FC5395B2CB31F /* FeatureScreens.swift in Sources */,
+				231CB829C256AAB0390CF5F3 /* FeatureViewModels.swift in Sources */,
+				47AF77B1187BEE3989448F37 /* FolderSizePanel.swift in Sources */,
+				265E8DA30CF9D4330C334CEC /* FolderSizeSession.swift in Sources */,
+				6EA99B31ADA393886DCCF613 /* ListCardLayout.swift in Sources */,
+				5E400641A985CFC02A9B908F /* ListSortOptions.swift in Sources */,
+				FFD76A09DEFE3E5CB5BDE8CD /* LumaApp.swift in Sources */,
+				290AAA002B7F781E630364C6 /* LumaServiceProvider.swift in Sources */,
+				FF9D5E3756499849982A58E4 /* LumaStatusItemController.swift in Sources */,
+				9976B913C13FDB83AE719EBF /* LumaWindowFocus.swift in Sources */,
+				B9524DB044668E2458BFF740 /* MemoryView.swift in Sources */,
+				22160BE49409AC51958A2FD1 /* MoreScreens.swift in Sources */,
+				2E48C94B812BA6CE55D692C8 /* MoreViewModels.swift in Sources */,
+				EB780DB900D10A6FB9E428D7 /* NetworkView.swift in Sources */,
+				FE8EBAE3FFC880C8C1CA1672 /* NetworkViewModel.swift in Sources */,
+				A89DE2B789BC539314559B67 /* QuickCleanupView.swift in Sources */,
+				8B9C3647B9F5F146F62B46F6 /* RunningEmulatorsCard.swift in Sources */,
+				F4905D603BE4727EFC8CAAC2 /* SizeThresholdChoice.swift in Sources */,
+				A46A24D67822AA2F6CB7211F /* StorageViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE668F703A2CB9893788D3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBF41DC6072F17E588A8DCE /* LumaCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABC656D20F68554B46C3068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79960BA092693D88E3B43AE0 /* LumaFinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE1009798E1797BDAC72B608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C111832D0F5E8B25A6F075B9 /* LumaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6066D40FAA70E2242A366297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91CF493225BEE4731E48A1EB /* LumaFinderSync */;
+			targetProxy = 4C11B532C3E49BFC250264FD /* PBXContainerItemProxy */;
+		};
+		C675A3F8639BBF6792B09F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0565F6C7DA26F0482928704E /* Luma */;
+			targetProxy = 5C6218BA484572FDB4727ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1882B0980A47A72FB926BD6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Luma/Resources/Luma.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Luma/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.luma.app;
+				PRODUCT_NAME = Luma;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Release;
+		};
+		3B86AE427B76A8BE72A17C8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.luma.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "";
+			};
+			name = Release;
+		};
+		64B3F29554E68D692FBF07CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.luma.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = Luma;
+			};
+			name = Release;
+		};
+		6A07A459DB18752AD74A145A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.luma.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "";
+			};
+			name = Debug;
+		};
+		6CB952023A286F13211CB884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C0A4C21F59ADC6DDCD811DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		E381B8E38C4B5D9CBB9E6416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.luma.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = Luma;
+			};
+			name = Debug;
+		};
+		EF9DCD2018744116B7AB0EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumaFinderSync/LumaFinderSync.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LumaFinderSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.luma.app.findersync;
+				PRODUCT_NAME = LumaFinderSync;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Release;
+		};
+		F3FD215439263F0A720E5BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LumaFinderSync/LumaFinderSync.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LumaFinderSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.luma.app.findersync;
+				PRODUCT_NAME = LumaFinderSync;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Debug;
+		};
+		FEECD67107BB7AE74F3574C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Luma/Resources/Luma.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Luma/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.luma.app;
+				PRODUCT_NAME = Luma;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04DA00EB8A99448AEEE86A94 /* Build configuration list for PBXNativeTarget "LumaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A07A459DB18752AD74A145A /* Debug */,
+				3B86AE427B76A8BE72A17C8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		06AF122279B2585E145DB210 /* Build configuration list for PBXNativeTarget "LumaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E381B8E38C4B5D9CBB9E6416 /* Debug */,
+				64B3F29554E68D692FBF07CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		39082DED094B543B7F177A5B /* Build configuration list for PBXNativeTarget "Luma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEECD67107BB7AE74F3574C8 /* Debug */,
+				1882B0980A47A72FB926BD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		76C02CB80ED17D52A62EEEBB /* Build configuration list for PBXNativeTarget "LumaFinderSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FD215439263F0A720E5BE9 /* Debug */,
+				EF9DCD2018744116B7AB0EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DEFB5A06B29D6BCD602A2291 /* Build configuration list for PBXProject "Luma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB952023A286F13211CB884 /* Debug */,
+				C0A4C21F59ADC6DDCD811DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0B846EE48DE4D6E7E124E1EC /* XCLocalSwiftPackageReference "Packages/LumaSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/LumaSystem;
+		};
+		0E1EBAFA90D5A9FA5C8AAFEB /* XCLocalSwiftPackageReference "Packages/LumaCleanup" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/LumaCleanup;
+		};
+		185067D4B7C92A1019C46D9E /* XCLocalSwiftPackageReference "Packages/LumaUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/LumaUI;
+		};
+		7ECBB88F7AA5B940D8EC06CB /* XCLocalSwiftPackageReference "Packages/LumaStorage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/LumaStorage;
+		};
+		9D7207455D6A0CA3427B4B63 /* XCLocalSwiftPackageReference "Packages/LumaStartup" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/LumaStartup;
+		};
+		B43BD5D25FC518CC4E6E67EE /* XCLocalSwiftPackageReference "Packages/LumaCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/LumaCore;
+		};
+		B7CF17E0AAAE97A31EFDB0A7 /* XCLocalSwiftPackageReference "Packages/LumaSupport" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/LumaSupport;
+		};
+		BB50759D60A80D8CD2264EF3 /* XCLocalSwiftPackageReference "Packages/LumaApps" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/LumaApps;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06EEA5FD4596BB9871A71EC1 /* LumaCleanup */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaCleanup;
+		};
+		3C84E772181DAD04F3A51E7C /* LumaUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaUI;
+		};
+		59F4AA995E6392F4022BC5B8 /* LumaStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaStorage;
+		};
+		5B5B56D6384296B01F3A4868 /* LumaSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaSupport;
+		};
+		7D2F165252A1F4DA6C56C022 /* LumaStartup */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaStartup;
+		};
+		8AAE9835952B0466437F6A85 /* LumaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaCore;
+		};
+		A6A56DD0A38830A83275A16C /* LumaSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaSupport;
+		};
+		A76C4F8C8B55A19B1DF84061 /* LumaSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaSystem;
+		};
+		E4E97FDB16109ED4B10375EC /* LumaSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaSystem;
+		};
+		E526FF4B6A1C6C8734A11424 /* LumaApps */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaApps;
+		};
+		E9E22E51066C7C21215B6844 /* LumaCleanup */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaCleanup;
+		};
+		F63CE87C6C9B75610F099A65 /* LumaStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaStorage;
+		};
+		F8E88AAD9C7EC9EDA2728F6C /* LumaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LumaCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AACE5AD3943208FFB6B19277 /* Project object */;
+}

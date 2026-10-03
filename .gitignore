@@ -1,0 +1,23 @@
+.build/
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+.swiftpm/
+Packages/**/.build/
+*.dSYM/
+*.ipa
+*.xcarchive
+Archives/
+.swiftpm-configuration
+
+# Application archives belong in GitHub Releases, not source history.
+dist/
+*.dmg
+*.p12
+*.p8
+*.mobileprovision
+*.provisionprofile
+.env
+.env.*
