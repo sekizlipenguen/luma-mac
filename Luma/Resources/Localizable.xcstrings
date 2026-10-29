@@ -10720,6 +10720,23 @@
         }
       }
     },
+    "Downloaded component cache in GoogleUpdater/crx_cache. The updater app itself is kept.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": { "stringUnit": { "state": "translated", "value": "ذاكرة المكونات المؤقتة في GoogleUpdater/crx_cache. تطبيق التحديث نفسه يبقى." } },
+        "de": { "stringUnit": { "state": "translated", "value": "Heruntergeladener Komponenten-Cache in GoogleUpdater/crx_cache. Die Updater-App selbst bleibt." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Downloaded component cache in GoogleUpdater/crx_cache. The updater app itself is kept." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Caché de componentes descargados en GoogleUpdater/crx_cache. La app del actualizador se conserva." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Cache des composants téléchargés dans GoogleUpdater/crx_cache. L’app de mise à jour reste." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Cache dei componenti scaricati in GoogleUpdater/crx_cache. L’app di aggiornamento resta." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "GoogleUpdater/crx_cache にあるダウンロード済みコンポーネントのキャッシュ。アップデーター本体は残します。" } },
+        "ko": { "stringUnit": { "state": "translated", "value": "GoogleUpdater/crx_cache의 다운로드된 구성 요소 캐시입니다. 업데이터 앱 자체는 유지됩니다." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Cache de componentes baixados em GoogleUpdater/crx_cache. O app do atualizador permanece." } },
+        "ru": { "stringUnit": { "state": "translated", "value": "Кэш загруженных компонентов в GoogleUpdater/crx_cache. Само приложение обновления остаётся." } },
+        "tr": { "stringUnit": { "state": "translated", "value": "GoogleUpdater/crx_cache içindeki indirilmiş bileşen önbelleği. Güncelleyici uygulaması durur." } },
+        "zh-Hans": { "stringUnit": { "state": "translated", "value": "GoogleUpdater/crx_cache 中已下载的组件缓存。更新程序本身会保留。" } }
+      }
+    },
     "Downloads": {
       "extractionState": "manual",
       "localizations": {
@@ -14491,6 +14508,23 @@
             "value": "Google Chrome cache directories only — not profiles or passwords."
           }
         }
+      }
+    },
+    "Google Update Cache": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": { "stringUnit": { "state": "translated", "value": "ذاكرة تحديث Google المؤقتة" } },
+        "de": { "stringUnit": { "state": "translated", "value": "Google-Update-Cache" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Google Update Cache" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Caché de actualización de Google" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Cache de mise à jour Google" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Cache aggiornamenti Google" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "Google アップデートキャッシュ" } },
+        "ko": { "stringUnit": { "state": "translated", "value": "Google 업데이트 캐시" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Cache de atualização do Google" } },
+        "ru": { "stringUnit": { "state": "translated", "value": "Кэш обновлений Google" } },
+        "tr": { "stringUnit": { "state": "translated", "value": "Google Güncelleme Önbelleği" } },
+        "zh-Hans": { "stringUnit": { "state": "translated", "value": "Google 更新缓存" } }
       }
     },
     "Gradle Cache": {
@@ -23353,6 +23387,23 @@
             "value": "好"
           }
         }
+      }
+    },
+    "Old App Versions": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": { "stringUnit": { "state": "translated", "value": "إصدارات التطبيقات القديمة" } },
+        "de": { "stringUnit": { "state": "translated", "value": "Alte App-Versionen" } },
+        "en": { "stringUnit": { "state": "translated", "value": "Old App Versions" } },
+        "es": { "stringUnit": { "state": "translated", "value": "Versiones antiguas de apps" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Anciennes versions d’apps" } },
+        "it": { "stringUnit": { "state": "translated", "value": "Vecchie versioni delle app" } },
+        "ja": { "stringUnit": { "state": "translated", "value": "古いアプリのバージョン" } },
+        "ko": { "stringUnit": { "state": "translated", "value": "오래된 앱 버전" } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Versões antigas de apps" } },
+        "ru": { "stringUnit": { "state": "translated", "value": "Старые версии приложений" } },
+        "tr": { "stringUnit": { "state": "translated", "value": "Eski Uygulama Sürümleri" } },
+        "zh-Hans": { "stringUnit": { "state": "translated", "value": "旧版应用数据" } }
       }
     },
     "Old Installers in Downloads": {
@@ -35597,6 +35648,23 @@
             "value": "版本 %@"
           }
         }
+      }
+    },
+    "Older version folders left beside the one the installed app still uses. That current folder stays. If the app is gone, every leftover version is listed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": { "stringUnit": { "state": "translated", "value": "مجلدات إصدارات أقدم بجانب المجلد الذي يستخدمه التطبيق المثبّت. المجلد الحالي يبقى. إذا لم يعد التطبيق موجودًا، يُعرض كل إصدار متبقٍ." } },
+        "de": { "stringUnit": { "state": "translated", "value": "Ältere Versionsordner neben dem Ordner, den die installierte App noch nutzt. Dieser aktuelle Ordner bleibt. Ist die App entfernt, wird jede übrig gebliebene Version aufgelistet." } },
+        "en": { "stringUnit": { "state": "translated", "value": "Older version folders left beside the one the installed app still uses. That current folder stays. If the app is gone, every leftover version is listed." } },
+        "es": { "stringUnit": { "state": "translated", "value": "Carpetas de versiones antiguas junto a la que aún usa la app instalada. Esa carpeta actual se conserva. Si la app ya no está, se lista cada versión restante." } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Anciens dossiers de version à côté de celui que l’app installée utilise encore. Ce dossier actuel reste. Si l’app n’est plus là, chaque version restante est listée." } },
+        "it": { "stringUnit": { "state": "translated", "value": "Cartelle di versioni precedenti accanto a quella che l’app installata usa ancora. Quella cartella attuale resta. Se l’app non c’è più, ogni versione rimasta viene elencata." } },
+        "ja": { "stringUnit": { "state": "translated", "value": "インストール中のアプリがまだ使うフォルダの隣に残った古いバージョンフォルダ。その現行フォルダは残します。アプリが無い場合は残ったバージョンをすべて一覧します。" } },
+        "ko": { "stringUnit": { "state": "translated", "value": "설치된 앱이 아직 쓰는 폴더 옆에 남은 이전 버전 폴더입니다. 현재 폴더는 유지됩니다. 앱이 없으면 남은 버전이 모두 목록에 나옵니다." } },
+        "pt-BR": { "stringUnit": { "state": "translated", "value": "Pastas de versões antigas ao lado da que o app instalado ainda usa. Essa pasta atual permanece. Se o app não está mais instalado, cada versão restante é listada." } },
+        "ru": { "stringUnit": { "state": "translated", "value": "Папки старых версий рядом с той, которую ещё использует установленное приложение. Эта текущая папка остаётся. Если приложения нет, в список попадает каждая оставшаяся версия." } },
+        "tr": { "stringUnit": { "state": "translated", "value": "Kurulu uygulamanın hâlâ kullandığı klasörün yanında kalan eski sürüm klasörleri. Güncel klasör durur. Uygulama yoksa kalan her sürüm listelenir." } },
+        "zh-Hans": { "stringUnit": { "state": "translated", "value": "留在已安装应用仍在使用的文件夹旁边的旧版本文件夹。当前文件夹会保留。如果应用已不在，则会列出每一个残留版本。" } }
       }
     },
     "Volume": {

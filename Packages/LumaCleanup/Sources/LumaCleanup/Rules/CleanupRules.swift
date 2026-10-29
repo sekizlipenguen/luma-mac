@@ -247,6 +247,30 @@ public enum CleanupRuleCatalog {
                     FileIO.directoryExists(home.appendingPathComponent("Downloads"))
                 },
                 pathProviders: { Self.oldInstallers() }
+            ),
+            PathCleanupRule(
+                id: "stale-app-versions",
+                title: "Old App Versions",
+                explanation: "Older version folders left beside the one the installed app still uses. That current folder stays. If the app is gone, every leftover version is listed.",
+                riskLevel: .caution,
+                category: "General",
+                availabilityProbe: {
+                    FileIO.directoryExists(home.appendingPathComponent("Library/Application Support"))
+                },
+                pathProviders: { StaleAppVersionFinder.staleFolderURLs() }
+            ),
+            PathCleanupRule(
+                id: "google-updater-cache",
+                title: "Google Update Cache",
+                explanation: "Downloaded component cache in GoogleUpdater/crx_cache. The updater app itself is kept.",
+                riskLevel: .caution,
+                category: "General",
+                availabilityProbe: {
+                    FileIO.directoryExists(home.appendingPathComponent("Library/Application Support/Google/GoogleUpdater/crx_cache"))
+                },
+                pathProviders: {
+                    [home.appendingPathComponent("Library/Application Support/Google/GoogleUpdater/crx_cache")]
+                }
             )
         ]
     }
