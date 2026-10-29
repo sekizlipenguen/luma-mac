@@ -12,7 +12,7 @@
 8. **App uninstall:** Every related path is listed and individually selectable before Trash.
 9. **Startup:** System LaunchDaemons are reveal-only; user LaunchAgents may toggle.
 10. **Privacy:** Local only. No analytics SDK. No network requirement.
-11. **CPU groups:** Normal AppKit quit for owned regular apps only; self and host system services are read-only. Process identity is rechecked at confirmation.
+11. **CPU groups / background apps:** Normal AppKit quit for owned regular apps only; self, Finder, and host system services are read-only. Process identity is rechecked at confirmation. Background apps list running LaunchAgents without `sfltool` or an admin prompt. User agents may `launchctl bootout`; system daemons stay read-only. Never force-quits.
 12. **Emulators:** Shutdown only confirmed device IDs via simctl / adb. Physical phones are excluded. Never erase device data or kill CoreSimulator/audio services; running device tests are interrupted.
 
 ## FDA

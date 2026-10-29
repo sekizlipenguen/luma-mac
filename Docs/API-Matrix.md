@@ -11,6 +11,7 @@
 | Process energy | `proc_pid_rusage` / `ri_energy_nj` | Rate via sample deltas (mW); not Activity Monitor Energy Impact |
 | Network | `getifaddrs` + `NWPathMonitor` + `SCDynamicStore` + `proc_pidfdinfo` | Rates, IPs, DNS, live sockets (app ↔ remote). No invented per-app byte rates; no cloud public-IP |
 | Processes | `proc_listpids` / `proc_pidinfo` | Resident size |
+| Background apps | `launchctl list` + LaunchAgent plists | No `sfltool`; user LaunchAgents may `bootout` |
 | Temperature | — | Explicitly unavailable (no public SMC) |
 | Disk health | `/usr/sbin/diskutil info` | SMART only if reported |
 | SHA-256 | CryptoKit | Streaming |

@@ -89,8 +89,8 @@ final class DuplicateHashTests: XCTestCase {
 }
 
 final class DestinationIntegrityTests: XCTestCase {
-    func testEighteenDestinationsGroupedWithoutOverlap() {
-        XCTAssertEqual(AppDestination.allCases.count, 18)
+    func testNineteenDestinationsGroupedWithoutOverlap() {
+        XCTAssertEqual(AppDestination.allCases.count, 19)
         let grouped = AppDestination.SidebarSection.allCases.flatMap(\.destinations)
         XCTAssertEqual(Set(grouped).count, grouped.count, "Sidebar sections should not overlap")
         XCTAssertEqual(Set(grouped), Set(AppDestination.allCases))

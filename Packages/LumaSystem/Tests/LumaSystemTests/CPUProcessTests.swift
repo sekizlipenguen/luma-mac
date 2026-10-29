@@ -97,6 +97,37 @@ final class CPUProcessTests: XCTestCase {
         XCTAssertFalse(allowed("/Applications/Browser.app", pid: 1))
     }
 
+    func testBackgroundListingKeepsOwnedRegularAppsAndDropsProtectedOnes() {
+        func probe(
+            pid: Int32, name: String, path: String, hidden: Bool = false,
+            terminated: Bool = false, regular: Bool = true, uid: UInt32 = 501,
+            bundle: String? = nil
+        ) -> BackgroundAppProbe {
+            BackgroundAppProbe(
+                pid: pid, name: name, bundleIdentifier: bundle ?? "app.\(name)",
+                bundlePath: path, isHidden: hidden, isTerminated: terminated,
+                isRegular: regular, userID: uid
+            )
+        }
+        let listed = CPUApplicationControl.listed(
+            [
+                probe(pid: 30, name: "Safari", path: "/Applications/Safari.app", hidden: true),
+                probe(pid: 31, name: "Notes", path: "/System/Applications/Notes.app"),
+                probe(pid: 32, name: "Menu", path: "/Applications/Menu.app", regular: false),
+                probe(pid: 33, name: "Finder", path: "/System/Library/CoreServices/Finder.app"),
+                probe(pid: 20, name: "Luma", path: "/Applications/Luma.app", bundle: "app.luma"),
+                probe(pid: 34, name: "Gone", path: "/Applications/Gone.app", terminated: true),
+                probe(pid: 35, name: "Root", path: "/Applications/Root.app", uid: 0),
+                probe(pid: 36, name: "Mail", path: "/System/Applications/Mail.app")
+            ],
+            currentUserID: 501,
+            currentPID: 20,
+            ownBundleIdentifier: "app.luma",
+            ownApplicationPath: "/Applications/Luma.app"
+        )
+        XCTAssertEqual(listed.map(\.name), ["Mail", "Notes", "Safari"])
+    }
+
     func testSamplerSeesItsOwnIdentityAndRejectsStaleIdentity() async throws {
         let sampler = CPUProcessSampler()
         let first = await sampler.sample()

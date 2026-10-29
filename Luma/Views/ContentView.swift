@@ -13,6 +13,7 @@ import LumaUI
 final class AppSession {
     let dashboard: DashboardViewModel
     let emulators: EmulatorsViewModel
+    let backgroundApps: BackgroundAppsViewModel
     let memory: MemoryViewModel
     let network: NetworkViewModel
     let storage: StorageViewModel
@@ -30,6 +31,7 @@ final class AppSession {
     init(environment: AppEnvironment) {
         dashboard = DashboardViewModel(metrics: environment.metrics)
         emulators = EmulatorsViewModel(service: environment.emulators)
+        backgroundApps = BackgroundAppsViewModel()
         dashboard.intervalSeconds = environment.preferences.metricsIntervalSeconds
         memory = MemoryViewModel(metrics: environment.metrics)
         network = NetworkViewModel(sampler: environment.networkSampler)
@@ -169,6 +171,9 @@ struct ContentView: View {
         case .cpuProcesses:
             CPUProcessesView(model: session.dashboard)
                 .accessibilityIdentifier("screen.cpuProcesses")
+        case .backgroundApps:
+            BackgroundAppsView(model: session.backgroundApps)
+                .accessibilityIdentifier("screen.backgroundApps")
         case .memory:
             MemoryView(model: session.memory)
                 .accessibilityIdentifier("screen.memory")

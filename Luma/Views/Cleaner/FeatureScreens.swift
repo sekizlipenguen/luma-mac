@@ -3,6 +3,7 @@ import LumaApps
 import LumaCleanup
 import LumaCore
 import LumaSupport
+import LumaStartup
 import LumaUI
 
 struct CleanerView: View {
@@ -443,48 +444,207 @@ struct AppsView: View {
 
 struct StartupView: View {
     @Bindable var model: StartupViewModel
+    @State private var searchText = ""
+    @State private var pendingItem: StartupItem?
+    @State private var pendingEnabled = false
+
+    private var userItems: [StartupItem] { model.items.filter(\.isMutable) }
+    private var systemItems: [StartupItem] { model.items.filter { !$0.isMutable && $0.kind != "LoginItem" } }
+    private var isBusy: Bool { model.isLoading || model.updatingID != nil }
+
+    private func matching(_ items: [StartupItem]) -> [StartupItem] {
+        let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+        return query.isEmpty ? items : items.filter { $0.label.localizedStandardContains(query) }
+    }
 
     var body: some View {
-        List {
-            Section {
-                Text("System LaunchDaemons are listed but not modified (SIP). User LaunchAgents can be toggled with confirmation via launchctl.")
-                    .foregroundStyle(.secondary)
-            }
-            ForEach(model.items) { item in
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(item.label)
-                        Text(LumaL10n.format("%@ · %@", LumaL10n.string(item.kind), item.domain.rawValue))
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                        if let reason = item.unavailableReason {
-                            Text(LocalizedStringKey(reason)).font(.caption2).foregroundStyle(.orange)
-                        }
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                header
+                HStack(spacing: 10) {
+                    Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
+                    TextField(LumaL10n.string("Search startup items"), text: $searchText)
+                        .textFieldStyle(.plain)
+                        .accessibilityIdentifier("startup.search")
+                    if !searchText.isEmpty {
+                        Button { searchText = "" } label: { Image(systemName: "xmark.circle.fill") }
+                            .buttonStyle(.plain).foregroundStyle(.secondary)
+                            .accessibilityLabel(LumaL10n.string("Clear search"))
+                            .accessibilityIdentifier("startup.clearSearch")
                     }
-                    Spacer()
-                    if item.isMutable {
-                        Toggle("Enabled", isOn: Binding(
-                            get: { item.isEnabled },
-                            set: { newValue in Task { await model.toggle(item, enabled: newValue) } }
-                        ))
-                        .labelsHidden()
-                    } else if item.kind == "LoginItem" {
-                        Button("Open Settings") {
-                            if let url = URL(string: item.path) {
-                                NSWorkspace.shared.open(url)
-                            }
-                        }
-                    } else {
-                        Button("Reveal") {
-                            NSWorkspace.shared.activateFileViewerSelecting([URL(fileURLWithPath: item.path)])
-                        }
+                }
+                .padding(12)
+                .background(.background.secondary, in: RoundedRectangle(cornerRadius: 10))
+
+                if !model.hasLoaded {
+                    ProgressView().frame(maxWidth: .infinity).padding(32)
+                } else if matching(userItems).isEmpty && matching(systemItems).isEmpty {
+                    ContentUnavailableView(
+                        LumaL10n.string(searchText.isEmpty ? "No startup items found" : "No matching startup items"),
+                        systemImage: "power"
+                    )
+                    .accessibilityIdentifier("startup.empty")
+                } else {
+                    if !matching(userItems).isEmpty {
+                        itemSection(title: "User startup items", symbol: "person.crop.circle", items: matching(userItems))
+                    }
+                    if !matching(systemItems).isEmpty {
+                        itemSection(title: "System services", symbol: "lock.shield", items: matching(systemItems))
                     }
                 }
             }
+            .padding(20)
+            .frame(maxWidth: 1100)
+            .frame(maxWidth: .infinity)
         }
         .navigationTitle("Startup")
         .task { await model.load() }
-        .overlay { if model.isLoading { ProgressView() } }
+        .confirmationDialog(
+            pendingEnabled
+                ? LumaL10n.format("Enable %@ at login?", pendingItem?.label ?? "")
+                : LumaL10n.format("Disable %@ at login?", pendingItem?.label ?? ""),
+            isPresented: Binding(get: { pendingItem != nil }, set: { if !$0 { pendingItem = nil } }),
+            titleVisibility: .visible
+        ) {
+            Button(LumaL10n.string(pendingEnabled ? "Enable" : "Disable"), role: pendingEnabled ? nil : .destructive) {
+                guard let item = pendingItem else { return }
+                let enabled = pendingEnabled
+                pendingItem = nil
+                Task { await model.toggle(item, enabled: enabled) }
+            }
+            Button(LumaL10n.string("Cancel"), role: .cancel) { pendingItem = nil }
+        } message: {
+            Text(LumaL10n.string("Changes whether this item starts at login. Turning it off may stop its background service."))
+        }
+        .alert(LumaL10n.string("Could not update startup items"), isPresented: Binding(
+            get: { model.errorMessage != nil },
+            set: { if !$0 { model.errorMessage = nil } }
+        )) {
+            Button("OK") { model.errorMessage = nil }
+        } message: {
+            Text(model.errorMessage ?? "")
+        }
+    }
+
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack(alignment: .top, spacing: 14) {
+                Image(systemName: "power")
+                    .font(.title2.weight(.semibold)).foregroundStyle(LumaTheme.memory)
+                    .frame(width: 44, height: 44)
+                    .background(LumaTheme.memory.opacity(0.12), in: RoundedRectangle(cornerRadius: 12))
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(LumaL10n.string("Manage what starts with your Mac."))
+                        .font(.title3.weight(.semibold))
+                    Text(LumaL10n.string("User items can be switched on or off. System services are view-only."))
+                        .font(.callout).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 8)
+                if isBusy { ProgressView().controlSize(.small) }
+                Button { Task { await model.load() } } label: { Image(systemName: "arrow.clockwise") }
+                    .buttonStyle(.borderless).font(.body.weight(.medium))
+                    .help(LumaL10n.string("Refresh")).disabled(isBusy)
+                    .accessibilityLabel(LumaL10n.string("Refresh"))
+                    .accessibilityIdentifier("startup.refresh")
+            }
+            if model.hasLoaded {
+                ViewThatFits(in: .horizontal) {
+                    HStack(spacing: 10) { summaryBadges }
+                    VStack(alignment: .leading, spacing: 8) { summaryBadges }
+                }
+            }
+            if let loginItem = model.items.first(where: { $0.kind == "LoginItem" }) {
+                HStack(spacing: 10) {
+                    Text(LumaL10n.string("Manage other login items in System Settings."))
+                        .font(.caption).foregroundStyle(.secondary)
+                    Spacer(minLength: 8)
+                    Button(LumaL10n.string("Open Settings")) {
+                        if let url = URL(string: loginItem.path) { NSWorkspace.shared.open(url) }
+                    }
+                    .controlSize(.small).accessibilityIdentifier("startup.openSettings")
+                }
+            }
+        }
+        .padding(18)
+        .background(.background.secondary, in: RoundedRectangle(cornerRadius: LumaTheme.cardCornerRadius))
+        .overlay {
+            RoundedRectangle(cornerRadius: LumaTheme.cardCornerRadius)
+                .strokeBorder(LumaTheme.memory.opacity(0.18), lineWidth: 1)
+        }
+    }
+
+    @ViewBuilder private var summaryBadges: some View {
+        badge(LumaL10n.format("%ld enabled", userItems.filter(\.isEnabled).count), color: LumaTheme.storage)
+        badge(LumaL10n.format("%ld disabled", userItems.filter { !$0.isEnabled }.count), color: .secondary)
+        badge(LumaL10n.format("%ld system services", systemItems.count), color: LumaTheme.memory)
+    }
+
+    private func badge(_ text: String, color: Color) -> some View {
+        Text(text).font(.caption.weight(.medium)).monospacedDigit()
+            .foregroundStyle(color)
+            .padding(.horizontal, 10).padding(.vertical, 5)
+            .background(color.opacity(0.10), in: Capsule())
+    }
+
+    private func itemSection(title: String, symbol: String, items: [StartupItem]) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 8) {
+                Label(LumaL10n.string(title), systemImage: symbol)
+                    .font(.subheadline.weight(.semibold)).foregroundStyle(.secondary)
+                Text(String(items.count)).font(.caption.monospacedDigit()).foregroundStyle(.tertiary)
+            }
+            VStack(spacing: 0) {
+                ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
+                    startupRow(item)
+                    if index < items.count - 1 { Divider().padding(.leading, 62) }
+                }
+            }
+            .background(.background.secondary, in: RoundedRectangle(cornerRadius: LumaTheme.cardCornerRadius))
+            .overlay {
+                RoundedRectangle(cornerRadius: LumaTheme.cardCornerRadius)
+                    .strokeBorder(.primary.opacity(0.06), lineWidth: 1)
+            }
+        }
+    }
+
+    private func startupRow(_ item: StartupItem) -> some View {
+        HStack(spacing: 14) {
+            Image(systemName: item.isMutable ? "bolt.circle" : "lock.shield")
+                .font(.title3).foregroundStyle(item.isMutable ? LumaTheme.memory : .secondary)
+                .frame(width: 32, height: 32)
+                .background((item.isMutable ? LumaTheme.memory : Color.secondary).opacity(0.08), in: RoundedRectangle(cornerRadius: 9))
+            VStack(alignment: .leading, spacing: 5) {
+                Text(item.label).font(.body.weight(.medium)).lineLimit(1).truncationMode(.middle)
+                    .help(item.label)
+                Text(LumaL10n.string(item.kind))
+                    .font(.caption).foregroundStyle(.secondary)
+            }
+            Spacer(minLength: 8)
+            if item.isMutable {
+                badge(LumaL10n.string(item.isEnabled ? "Enabled" : "Disabled"), color: item.isEnabled ? LumaTheme.storage : .secondary)
+                Toggle(LumaL10n.format("Enable %@ at login", item.label), isOn: Binding(
+                    get: { item.isEnabled },
+                    set: { enabled in
+                        pendingEnabled = enabled
+                        pendingItem = item
+                    }
+                ))
+                .toggleStyle(.switch).controlSize(.small).tint(LumaTheme.storage).labelsHidden()
+                .disabled(isBusy).accessibilityIdentifier("startup.toggle.\(item.label)")
+            } else {
+                badge(LumaL10n.string("Read-only"), color: .secondary)
+                Button { NSWorkspace.shared.activateFileViewerSelecting([URL(fileURLWithPath: item.path)]) } label: {
+                    Image(systemName: "folder")
+                }
+                .buttonStyle(.borderless).foregroundStyle(.secondary)
+                .help(LumaL10n.string("Reveal in Finder"))
+                .accessibilityLabel(LumaL10n.format("Reveal %@ in Finder", item.label))
+                .accessibilityIdentifier("startup.reveal.\(item.label)")
+            }
+        }
+        .padding(.horizontal, 16).padding(.vertical, 13)
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("startup.item.\(item.label)")
     }
 }
 

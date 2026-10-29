@@ -34,6 +34,7 @@
 		83BFA601CD5412F11BA4FE05 /* LumaStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F63CE87C6C9B75610F099A65 /* LumaStorage */; };
 		842BE3E3BC153EE3D7E9D6F2 /* CPUProcessesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D173842A6A8DF5E6FD78A /* CPUProcessesView.swift */; };
 		8B9C3647B9F5F146F62B46F6 /* RunningEmulatorsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17AC7379317C9CF468832D /* RunningEmulatorsCard.swift */; };
+		9586CDF40789772600C2C5F7 /* BackgroundAppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F989A724404528A3EC2D3D86 /* BackgroundAppsViewModel.swift */; };
 		992195D6AE64DF2C24A52956 /* LumaSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A6A56DD0A38830A83275A16C /* LumaSupport */; };
 		9934FA32A7265B2F60EEB7C1 /* CPUProcessesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF74B0587E68FF17260B7 /* CPUProcessesCard.swift */; };
 		9976B913C13FDB83AE719EBF /* LumaWindowFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0C36CCE1CAD714D2F5ED8 /* LumaWindowFocus.swift */; };
@@ -42,6 +43,7 @@
 		A59690B36BF01F4753BBE409 /* EmulatorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A37131EEBCDEFC9B2706EE /* EmulatorsViewModel.swift */; };
 		A89DE2B789BC539314559B67 /* QuickCleanupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF84C546EF9284F26482CA /* QuickCleanupView.swift */; };
 		B9524DB044668E2458BFF740 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990173B3A2E869445F805539 /* MemoryView.swift */; };
+		BB1156835123A256BB237254 /* BackgroundAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130115173F800CCE7281EAE /* BackgroundAppsView.swift */; };
 		C111832D0F5E8B25A6F075B9 /* LumaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449762D0503C1160CABF3044 /* LumaUITests.swift */; };
 		C66BC6488886D419AFB5B0E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B799DA8977D0C9FFCB2BE7 /* ContentView.swift */; };
 		E87CBF35435ACE34B6F59A5A /* LumaApps in Frameworks */ = {isa = PBXBuildFile; productRef = E526FF4B6A1C6C8734A11424 /* LumaApps */; };
@@ -120,6 +122,7 @@
 		7E74086C76C36079E4E094EE /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		801314858973A4954AD555A2 /* LumaFinderSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LumaFinderSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C2FC6184855382F5E5050A /* LumaSystem */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaSystem; path = Packages/LumaSystem; sourceTree = SOURCE_ROOT; };
+		8130115173F800CCE7281EAE /* BackgroundAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppsView.swift; sourceTree = "<group>"; };
 		8622749F5D1B6614FE2B1EC3 /* LumaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaApp.swift; sourceTree = "<group>"; };
 		89402CE7AAA1AF703AC18CA8 /* LumaStartup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaStartup; path = Packages/LumaStartup; sourceTree = SOURCE_ROOT; };
 		8C17AC7379317C9CF468832D /* RunningEmulatorsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningEmulatorsCard.swift; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 		E043B34F019D04F913CD316F /* LumaFinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaFinderSync.swift; sourceTree = "<group>"; };
 		E6B799DA8977D0C9FFCB2BE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7D91D2AFFFDEAF95DE951B9 /* LumaApps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LumaApps; path = Packages/LumaApps; sourceTree = SOURCE_ROOT; };
+		F989A724404528A3EC2D3D86 /* BackgroundAppsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppsViewModel.swift; sourceTree = "<group>"; };
 		FAEAE1CDF52FB44B83642DD3 /* EmulatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorsView.swift; sourceTree = "<group>"; };
 		FAFFCF010EF5059FE6F8B384 /* ListCardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardLayout.swift; sourceTree = "<group>"; };
 		FCF0F7E3EEB67822317D0B78 /* FeatureScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureScreens.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 		2559744A43A60F9AD3D9B1C6 /* Processes */ = {
 			isa = PBXGroup;
 			children = (
+				8130115173F800CCE7281EAE /* BackgroundAppsView.swift */,
 				3BBFF74B0587E68FF17260B7 /* CPUProcessesCard.swift */,
 				1C1D173842A6A8DF5E6FD78A /* CPUProcessesView.swift */,
 			);
@@ -307,6 +312,7 @@
 		A399583EF29556E46E3331D3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F989A724404528A3EC2D3D86 /* BackgroundAppsViewModel.swift */,
 				5B9792033C7FB585DAB8D46C /* DashboardViewModel.swift */,
 				A8A37131EEBCDEFC9B2706EE /* EmulatorsViewModel.swift */,
 				16F7B8382FCE4088C255A503 /* FeatureViewModels.swift */,
@@ -589,6 +595,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50E4E8E139E8485EB7656A0E /* AppEnvironment.swift in Sources */,
+				BB1156835123A256BB237254 /* BackgroundAppsView.swift in Sources */,
+				9586CDF40789772600C2C5F7 /* BackgroundAppsViewModel.swift in Sources */,
 				9934FA32A7265B2F60EEB7C1 /* CPUProcessesCard.swift in Sources */,
 				842BE3E3BC153EE3D7E9D6F2 /* CPUProcessesView.swift in Sources */,
 				C66BC6488886D419AFB5B0E3 /* ContentView.swift in Sources */,

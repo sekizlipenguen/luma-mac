@@ -4,6 +4,7 @@ import Foundation
 public enum AppDestination: String, CaseIterable, Identifiable, Sendable, Hashable {
     case dashboard
     case cpuProcesses
+    case backgroundApps
     case memory
     case network
     case storage
@@ -27,6 +28,7 @@ public enum AppDestination: String, CaseIterable, Identifiable, Sendable, Hashab
         switch self {
         case .dashboard: LumaL10n.string("Dashboard")
         case .cpuProcesses: LumaL10n.string("CPU Processes")
+        case .backgroundApps: LumaL10n.string("Background Apps")
         case .memory: LumaL10n.string("Memory")
         case .network: LumaL10n.string("Network")
         case .storage: LumaL10n.string("Storage")
@@ -50,6 +52,7 @@ public enum AppDestination: String, CaseIterable, Identifiable, Sendable, Hashab
         switch self {
         case .dashboard: "gauge.with.dots.needle.33percent"
         case .cpuProcesses: "cpu"
+        case .backgroundApps: "square.stack"
         case .memory: "memorychip"
         case .network: "network"
         case .storage: "externaldrive"
@@ -87,7 +90,7 @@ public enum AppDestination: String, CaseIterable, Identifiable, Sendable, Hashab
 
         public var destinations: [AppDestination] {
             switch self {
-            case .monitor: [.dashboard, .cpuProcesses, .memory, .network, .storage]
+            case .monitor: [.dashboard, .cpuProcesses, .backgroundApps, .memory, .network, .storage]
             case .maintenance: [.cleaner, .developer, .emulators, .apps, .startup, .duplicates, .largeFiles]
             case .system: [.diskHealth, .security, .care, .schedule, .history, .settings]
             }

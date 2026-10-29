@@ -121,14 +121,18 @@ final class StartupViewModel {
     var items: [StartupItem] = []
     var errorMessage: String?
     var isLoading = false
+    private(set) var hasLoaded = false
+    private(set) var updatingID: String?
 
     init(store: StartupItemStore) {
         self.store = store
     }
 
     func load() async {
+        guard !isLoading else { return }
         isLoading = true
-        defer { isLoading = false }
+        errorMessage = nil
+        defer { isLoading = false; hasLoaded = true }
         do {
             items = try await store.listItems()
         } catch {
@@ -137,6 +141,10 @@ final class StartupViewModel {
     }
 
     func toggle(_ item: StartupItem, enabled: Bool) async {
+        guard updatingID == nil, !isLoading, item.isMutable, item.isEnabled != enabled else { return }
+        updatingID = item.id
+        errorMessage = nil
+        defer { updatingID = nil }
         do {
             try await store.setEnabled(item, enabled: enabled)
             await load()

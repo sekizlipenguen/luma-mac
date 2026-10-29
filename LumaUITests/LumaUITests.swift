@@ -39,7 +39,7 @@ final class LumaUITests: XCTestCase {
 
     func testSidebarNavigationAllDestinations() throws {
         let destinations = [
-            "dashboard", "cpuProcesses", "memory", "network", "storage",
+            "dashboard", "cpuProcesses", "backgroundApps", "memory", "network", "storage",
             "cleaner", "developer", "emulators", "apps", "startup",
             "duplicates", "largeFiles", "diskHealth", "security",
             "care", "schedule", "history", "settings"
