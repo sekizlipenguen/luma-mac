@@ -6,7 +6,7 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
-**[Baixar DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[Baixar DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
 **Entenda seu Mac. Descubra o que ocupa espaço. Limpe mantendo o controle.**
 
@@ -42,9 +42,9 @@ Os recursos principais são locais. Dados indisponíveis são indicados: tempera
 
 **macOS 15 ou posterior · Apple Silicon e Intel.** Abra o DMG e arraste `Luma.app` para Aplicativos. Como alternativa, extraia o ZIP do app. Os arquivos de código-fonte não incluem o app compilado.
 
-**[Baixar DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[Baixar DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
-**Prévia 0.1.0:** assinatura ad hoc, sem Developer ID nem notarização da Apple. O macOS pode bloquear a primeira abertura. Se confiar na origem, siga as instruções da Apple para autorizar este app. Macs gerenciados podem impedir essa exceção. [Apple](https://support.apple.com/en-us/102445).
+**Prévia 0.1.1:** assinatura ad hoc, sem Developer ID nem notarização da Apple. O macOS pode bloquear a primeira abertura. Se confiar na origem, siga as instruções da Apple para autorizar este app. Macs gerenciados podem impedir essa exceção. [Apple](https://support.apple.com/en-us/102445).
 
 Para pastas Library protegidas: Ajustes do Sistema → Privacidade e Segurança → Acesso Total ao Disco. Sem permissão, o Luma ignora locais inacessíveis. Ative a extensão Finder nos ajustes de extensões do macOS se necessário. iOS precisa das ferramentas de linha de comando Xcode; Android precisa das ferramentas SDK, incluindo `adb`.
 

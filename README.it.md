@@ -6,7 +6,7 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
-**[Scarica il DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[Scarica il DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
 **Capisci il tuo Mac. Scopri cosa occupa spazio. Pulisci mantenendo il controllo.**
 
@@ -42,9 +42,9 @@ Le funzioni principali sono locali. Le informazioni non disponibili vengono indi
 
 **macOS 15 o successivo · Apple Silicon e Intel.** Apri il DMG e trascina `Luma.app` in Applicazioni. In alternativa estrai lo ZIP dell’app. Gli archivi del codice sorgente non contengono l’app compilata.
 
-**[Scarica il DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[Scarica il DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
-**Anteprima 0.1.0:** firma ad hoc, senza Developer ID né notarizzazione Apple. macOS può bloccare il primo avvio. Se ti fidi della fonte, segui le istruzioni Apple per autorizzare questa app. I Mac gestiti possono impedire questa eccezione. [Apple](https://support.apple.com/en-us/102445).
+**Anteprima 0.1.1:** firma ad hoc, senza Developer ID né notarizzazione Apple. macOS può bloccare il primo avvio. Se ti fidi della fonte, segui le istruzioni Apple per autorizzare questa app. I Mac gestiti possono impedire questa eccezione. [Apple](https://support.apple.com/en-us/102445).
 
 Per le cartelle Library protette: Impostazioni di Sistema → Privacy e Sicurezza → Accesso completo al disco. Senza autorizzazione, Luma salta i percorsi inaccessibili. Attiva l’estensione Finder nelle impostazioni delle estensioni macOS se necessaria. iOS richiede strumenti da riga di comando Xcode; Android richiede strumenti SDK, incluso `adb`.
 

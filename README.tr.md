@@ -16,7 +16,7 @@ Luma; sistem izleme, depolama inceleme ve Mac bakımı için SwiftUI ile gelişt
 
 [Sürümler](https://github.com/sekizlipenguen/luma-mac/releases) · [Hata bildir](https://github.com/sekizlipenguen/luma-mac/issues)
 
-**[DMG indir — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip)
+**[DMG indir — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip)
 
 ## Ekran görüntüleri
 
@@ -72,11 +72,11 @@ Desteklenen genel API yoksa sıcaklık gösterilmez; masaüstü Mac'lerde pil ve
 
 **macOS 15 veya üzeri gerekir. Apple Silicon ve Intel desteklenir.**
 
-**[DMG indir — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [Uygulama ZIP'i](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256 doğrulama](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[DMG indir — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [Uygulama ZIP'i](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256 doğrulama](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
 DMG'yi açın, `Luma.app` dosyasını **Applications / Uygulamalar** klasörüne sürükleyin, disk imajını çıkarın ve uygulamayı Uygulamalar'dan açın. Alternatif olarak uygulama ZIP'ini açıp `Luma.app` dosyasını Uygulamalar'a taşıyın. GitHub'ın otomatik kaynak kod arşivleri kurulabilir uygulama içermez.
 
-**İlk ön sürüm (0.1.0) ad-hoc imzalıdır; Developer ID dağıtım imzası ve Apple noter onayı yoktur.** macOS ilk açılışı engellerse ve kaynağa güveniyorsanız, uygulamayı açmayı denedikten sonra **Sistem Ayarları → Gizlilik ve Güvenlik → Yine de Aç** yolunu kullanıp Aç'ı onaylayın. Kurumsal Mac'lerde bu izin kapalı olabilir. [Apple'ın yönergesi](https://support.apple.com/tr-tr/102445).
+**Ön sürüm (0.1.1) ad-hoc imzalıdır; Developer ID dağıtım imzası ve Apple noter onayı yoktur.** macOS ilk açılışı engellerse ve kaynağa güveniyorsanız, uygulamayı açmayı denedikten sonra **Sistem Ayarları → Gizlilik ve Güvenlik → Yine de Aç** yolunu kullanıp Aç'ı onaylayın. Kurumsal Mac'lerde bu izin kapalı olabilir. [Apple'ın yönergesi](https://support.apple.com/tr-tr/102445).
 
 - **Tam Disk Erişimi:** korunan kullanıcı Library konumları için Sistem Ayarları → Gizlilik ve Güvenlik → Tam Disk Erişimi bölümünden Luma'ya izin verin. İzin yoksa erişilemeyen alanlar atlanır.
 - **Finder:** sağ tık menüsü için macOS uzantı ayarlarından Finder uzantısını etkinleştirin; klasör boyutu Servisi de kullanılabilir.

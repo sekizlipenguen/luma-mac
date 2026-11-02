@@ -6,7 +6,7 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
-**[DMG をダウンロード — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[DMG をダウンロード — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
 **Mac の状態を知り、容量を使っているものを見つけ、確認して整理。**
 
@@ -42,9 +42,9 @@ Luma の設定 → 言語で選択するか、システムの言語に従う設�
 
 **macOS 15 以降 · Apple Silicon と Intel。** DMG を開き、`Luma.app` をアプリケーションへドラッグします。アプリ ZIP の展開でもインストールできます。ソースコードのアーカイブにはビルド済みアプリは含まれません。
 
-**[DMG をダウンロード — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[DMG をダウンロード — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
-**プレビュー 0.1.0:** アドホック署名のみで、Developer ID 署名と Apple 公証はありません。初回起動が macOS にブロックされる場合があります。配布元を信頼できる場合は Apple の手順に従ってこのアプリを許可してください。管理された Mac では許可されない場合があります。 [Apple](https://support.apple.com/en-us/102445).
+**プレビュー 0.1.1:** アドホック署名のみで、Developer ID 署名と Apple 公証はありません。初回起動が macOS にブロックされる場合があります。配布元を信頼できる場合は Apple の手順に従ってこのアプリを許可してください。管理された Mac では許可されない場合があります。 [Apple](https://support.apple.com/en-us/102445).
 
 保護された Library フォルダには、システム設定 → プライバシーとセキュリティ → フルディスクアクセスから権限を付与します。権限がなければアクセスできない場所をスキップします。Finder 拡張は macOS の拡張設定で有効化できます。iOS には Xcode コマンドラインツール、Android には `adb` を含む SDK ツールが必要です。
 

@@ -16,7 +16,7 @@ Luma is a native SwiftUI utility for system monitoring, storage inspection, and 
 
 [Releases](https://github.com/sekizlipenguen/luma-mac/releases) · [Report a bug](https://github.com/sekizlipenguen/luma-mac/issues) · [License](LICENSE)
 
-**[Download DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip)
+**[Download DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip)
 
 ## A look inside
 
@@ -86,11 +86,11 @@ Unavailable information is labeled honestly: temperature may have no supported p
 
 **Requires macOS 15 or later. Apple Silicon and Intel are supported.**
 
-**[Download DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [Application ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256 checksums](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[Download DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [Application ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256 checksums](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
 Open the DMG, drag `Luma.app` to **Applications**, eject the disk image, and open Luma from Applications. Alternatively, extract the application ZIP and move `Luma.app` to Applications. GitHub's automatic source-code archives do not contain an installable app.
 
-**First public preview (0.1.0): ad-hoc signed, without Developer ID signing or Apple notarization.** macOS may block the first launch. If you trust this repository and the downloaded app, try opening Luma, then use **System Settings → Privacy & Security → Open Anyway**, and confirm Open. Managed Macs may prevent an exception. [Apple's instructions](https://support.apple.com/en-us/102445).
+**Public preview (0.1.1): ad-hoc signed, without Developer ID signing or Apple notarization.** macOS may block the first launch. If you trust this repository and the downloaded app, try opening Luma, then use **System Settings → Privacy & Security → Open Anyway**, and confirm Open. Managed Macs may prevent an exception. [Apple's instructions](https://support.apple.com/en-us/102445).
 
 ### Permissions and optional tools
 

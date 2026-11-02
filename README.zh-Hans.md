@@ -6,7 +6,7 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
-**[下载 DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[下载 DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
 **了解 Mac 的运行状态，找出占用空间的内容，确认后再清理。**
 
@@ -42,9 +42,9 @@ English · Türkçe · Deutsch · Français · Español · Italiano · Portuguê
 
 **macOS 15 或更高版本 · Apple Silicon 和 Intel。** 打开 DMG，将 `Luma.app` 拖入“应用程序”。也可以解压应用 ZIP。源代码压缩包不含已编译的应用。
 
-**[下载 DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[下载 DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
-**预览版 0.1.0：**仅有临时签名，没有 Developer ID 签名或 Apple 公证。macOS 可能阻止首次启动。如果信任来源，请按 Apple 的说明允许此应用。受管理的 Mac 可能不允许此例外。 [Apple](https://support.apple.com/en-us/102445).
+**预览版 0.1.1：**仅有临时签名，没有 Developer ID 签名或 Apple 公证。macOS 可能阻止首次启动。如果信任来源，请按 Apple 的说明允许此应用。受管理的 Mac 可能不允许此例外。 [Apple](https://support.apple.com/en-us/102445).
 
 访问受保护的 Library 文件夹需要在“系统设置 → 隐私与安全性 → 完全磁盘访问权限”中授权。未授权时会跳过无法访问的位置。Finder 扩展可在 macOS 扩展设置中启用。iOS 需要 Xcode 命令行工具，Android 需要包含 `adb` 的 SDK 工具。
 

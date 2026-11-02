@@ -6,7 +6,7 @@
 
 [English](README.md) · [Türkçe](README.tr.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-Hans.md) · [Русский](README.ru.md) · [العربية](README.ar.md)
 
-**[Скачать DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[Скачать DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
 **Понимайте, что делает Mac. Находите, что занимает место. Очищайте с контролем.**
 
@@ -42,9 +42,9 @@ English · Türkçe · Deutsch · Français · Español · Italiano · Portuguê
 
 **macOS 15 или новее · Apple Silicon и Intel.** Откройте DMG и перетащите `Luma.app` в Программы. Можно также распаковать ZIP приложения. Архивы исходного кода не содержат собранного приложения.
 
-**[Скачать DMG — v0.1.0](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/Luma-0.1.0-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.0/SHA256SUMS.txt)
+**[Скачать DMG — v0.1.1](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.dmg)** · [ZIP](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/Luma-0.1.1-macOS-universal.zip) · [SHA-256](https://github.com/sekizlipenguen/luma-mac/releases/download/v0.1.1/SHA256SUMS.txt)
 
-**Предварительная версия 0.1.0:** подпись ad hoc, без Developer ID и нотариального заверения Apple. macOS может заблокировать первый запуск. Если вы доверяете источнику, разрешите это приложение по инструкции Apple. На управляемых Mac это может быть запрещено. [Apple](https://support.apple.com/en-us/102445).
+**Предварительная версия 0.1.1:** подпись ad hoc, без Developer ID и нотариального заверения Apple. macOS может заблокировать первый запуск. Если вы доверяете источнику, разрешите это приложение по инструкции Apple. На управляемых Mac это может быть запрещено. [Apple](https://support.apple.com/en-us/102445).
 
 Для защищённых папок Library предоставьте Полный доступ к диску в Системные настройки → Конфиденциальность и безопасность. Без разрешения недоступные места пропускаются. Расширение Finder можно включить в настройках расширений macOS. Для iOS нужны инструменты командной строки Xcode; для Android — инструменты SDK, включая `adb`.
 
